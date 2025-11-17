@@ -22,6 +22,11 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
   const story = t(prophet.storyKey, { returnObjects: true }) as { chapters?: Array<{ title: string; text: string }> };
   const chapters = story?.chapters || [];
 
+  // Scroll to top when prophet changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [prophet.id]);
+
   // Update document title
   useEffect(() => {
     const prophetName = t(prophet.nameKey);
