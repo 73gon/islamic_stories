@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from '@tanstack/react-router';
 import { Separator } from '@/components/ui/separator';
 import type { ProphetStory } from '@/types/prophet';
 import { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { useReaderStore } from '@/store/readerStore';
+import { ReaderControls } from './ReaderControls';
 
 interface ProphetDetailProps {
   prophet: ProphetStory;
@@ -13,6 +15,7 @@ interface ProphetDetailProps {
 
 export function ProphetDetail({ prophet }: ProphetDetailProps) {
   const { t } = useTranslation();
+  const { focusMode, fontSize, fontFamily } = useReaderStore();
   const [activeChapter, setActiveChapter] = useState(0);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
   const summaryRef = useRef<HTMLElement | null>(null);
@@ -116,13 +119,27 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
   return (
     <div className='relative w-full'>
       <div className='flex justify-center'>
-        <motion.article initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className='w-full max-w-3xl px-4 sm:px-6 py-8 sm:py-12'>
+        <motion.article
+          animate={{ maxWidth: focusMode ? '56rem' : '48rem' }}
+          transition={{ duration: 0.5 }}
+          className={`w-full px-4 sm:px-6 py-8 sm:py-12 ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} ${fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'}`}
+        >
           {/* Main Content - Centered */}
-          {/* Back Link */}
-          <Link to='/' className='inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8'>
-            <ArrowLeft className='h-4 w-4' />
-            {t('prophetDetail.backToList')}
-          </Link>
+          {/* Back Link and Focus Button Row */}
+          <div className='flex items-center justify-between mb-8'>
+            <Link to='/' className='inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors'>
+              <ArrowLeft className='h-4 w-4' />
+              {t('prophetDetail.backToList')}
+            </Link>
+
+            <AnimatePresence>
+              {focusMode && (
+                <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} transition={{ duration: 0.3 }}>
+                  <ReaderControls />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
 
           {/* Title Block */}
           <header className='space-y-3 mb-12'>
@@ -144,7 +161,9 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
           {/* Summary Section */}
           <section ref={summaryRef} className='space-y-4 mb-12'>
             <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.summary')}</h2>
-            <p className='text-base text-foreground/90 leading-relaxed'>{t(prophet.summaryKey)}</p>
+            <div className='text-base text-foreground/90 leading-relaxed'>
+              <ReactMarkdown>{t(prophet.summaryKey)}</ReactMarkdown>
+            </div>
           </section>
 
           <Separator className='my-8' />
@@ -161,8 +180,12 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                   }}
                   className='space-y-3'
                 >
-                  <h3 className='text-lg font-semibold text-foreground'>{chapter.title}</h3>
-                  <div className='text-base text-foreground/90 leading-relaxed'>
+                  <h3 className={`font-semibold text-foreground ${fontSize === 'small' ? 'text-base' : fontSize === 'large' ? 'text-xl' : 'text-lg'}`}>{chapter.title}</h3>
+                  <div
+                    className={`text-foreground/90 leading-relaxed text-justify hyphens-auto ${
+                      fontSize === 'small' ? 'text-sm leading-7' : fontSize === 'large' ? 'text-lg leading-9' : 'text-base leading-8'
+                    }`}
+                  >
                     <ReactMarkdown>{chapter.text}</ReactMarkdown>
                   </div>
                 </div>
@@ -180,7 +203,9 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                   {prophet.lessonsKeys.map((lessonKey, index) => (
                     <li key={index} className='flex gap-3'>
                       <span className='text-primary font-bold mt-0.5 flex-shrink-0'>•</span>
-                      <span className='text-base text-foreground/90 leading-relaxed'>{t(lessonKey)}</span>
+                      <div className='text-base text-foreground/90 leading-relaxed'>
+                        <ReactMarkdown>{t(lessonKey)}</ReactMarkdown>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -207,53 +232,66 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
         </motion.article>
 
         {/* Sidebar - Chapters Navigation (Positioned next to content) */}
-        <aside className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'>
-          <div className='sticky top-1/2 -translate-y-1/2'>
-            <nav className='space-y-1'>
-              {/* Summary Link */}
-              <div>
-                <button
-                  onClick={() => scrollToChapter(-1)}
-                  className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                    activeChapter === -1 ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                  }`}
-                >
-                  {t('prophetDetail.summary')}
-                </button>
-                <Separator className='my-1' />
+        <AnimatePresence>
+          {!focusMode && (
+            <motion.aside 
+              initial={{ opacity: 0, x: 100 }} 
+              animate={{ opacity: 1, x: 0 }} 
+              exit={{ opacity: 0, x: 100 }} 
+              transition={{ duration: 0.3 }} 
+              className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'
+            >
+              <div className='sticky top-20 mb-8'>
+                <ReaderControls />
               </div>
+              <div className='sticky top-1/2 -translate-y-1/2'>
+                <nav className='space-y-1'>
+                  {/* Summary Link */}
+                  <div>
+                    <button
+                      onClick={() => scrollToChapter(-1)}
+                      className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                        activeChapter === -1 ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                      }`}
+                    >
+                      {t('prophetDetail.summary')}
+                    </button>
+                    <Separator className='my-1' />
+                  </div>
 
-              {/* Chapter Links */}
-              {chapters.map((chapter, index) => (
-                <div key={index}>
-                  <button
-                    onClick={() => scrollToChapter(index)}
-                    className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                      activeChapter === index ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                    }`}
-                  >
-                    {chapter.title}
-                  </button>
-                  {(index < chapters.length - 1 || prophet.lessonsKeys.length > 0) && <Separator className='my-1' />}
-                </div>
-              ))}
+                  {/* Chapter Links */}
+                  {chapters.map((chapter, index) => (
+                    <div key={index}>
+                      <button
+                        onClick={() => scrollToChapter(index)}
+                        className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                          activeChapter === index ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                        }`}
+                      >
+                        {chapter.title}
+                      </button>
+                      {(index < chapters.length - 1 || prophet.lessonsKeys.length > 0) && <Separator className='my-1' />}
+                    </div>
+                  ))}
 
-              {/* Lessons Link */}
-              {prophet.lessonsKeys.length > 0 && (
-                <div>
-                  <button
-                    onClick={() => scrollToChapter(chapters.length)}
-                    className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                      activeChapter === chapters.length ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                    }`}
-                  >
-                    {t('prophetDetail.lessons')}
-                  </button>
-                </div>
-              )}
-            </nav>
-          </div>
-        </aside>
+                  {/* Lessons Link */}
+                  {prophet.lessonsKeys.length > 0 && (
+                    <div>
+                      <button
+                        onClick={() => scrollToChapter(chapters.length)}
+                        className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                          activeChapter === chapters.length ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                        }`}
+                      >
+                        {t('prophetDetail.lessons')}
+                      </button>
+                    </div>
+                  )}
+                </nav>
+              </div>
+            </motion.aside>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
