@@ -5,6 +5,7 @@ import { Link } from '@tanstack/react-router';
 import { Separator } from '@/components/ui/separator';
 import type { ProphetStory } from '@/types/prophet';
 import { useState, useEffect, useRef } from 'react';
+import ReactMarkdown from "react-markdown";
 
 interface ProphetDetailProps {
   prophet: ProphetStory;
@@ -14,13 +15,16 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
   const { t } = useTranslation();
   const [activeChapter, setActiveChapter] = useState(0);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const summaryRef = useRef<HTMLElement | null>(null);
+  const lessonsRef = useRef<HTMLElement | null>(null);
   const isScrollingRef = useRef(false);
 
   const story = t(prophet.storyKey, { returnObjects: true }) as { chapters?: Array<{ title: string; text: string }> };
   const chapters = story?.chapters || [];
 
   useEffect(() => {
-    if (chapters.length === 0) return;
+    const allRefs = [summaryRef.current, ...chapterRefs.current, lessonsRef.current].filter(Boolean);
+    if (allRefs.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,9 +39,15 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
             return current.boundingClientRect.top < prev.boundingClientRect.top ? current : prev;
           });
 
-          const index = chapterRefs.current.findIndex((ref) => ref === topMostEntry.target);
-          if (index !== -1) {
-            setActiveChapter(index);
+          if (topMostEntry.target === summaryRef.current) {
+            setActiveChapter(-1);
+          } else if (topMostEntry.target === lessonsRef.current) {
+            setActiveChapter(chapters.length);
+          } else {
+            const index = chapterRefs.current.findIndex((ref) => ref === topMostEntry.target);
+            if (index !== -1) {
+              setActiveChapter(index);
+            }
           }
         }
       },
@@ -47,7 +57,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
       },
     );
 
-    chapterRefs.current.forEach((ref) => {
+    allRefs.forEach((ref) => {
       if (ref) {
         observer.observe(ref);
       }
@@ -59,7 +69,16 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
   }, [chapters.length]);
 
   const scrollToChapter = (index: number) => {
-    const element = chapterRefs.current[index];
+    let element: HTMLElement | null = null;
+    
+    if (index === -1) {
+      element = summaryRef.current;
+    } else if (index === chapters.length) {
+      element = lessonsRef.current;
+    } else {
+      element = chapterRefs.current[index];
+    }
+
     if (element) {
       // Set the active chapter immediately
       setActiveChapter(index);
@@ -107,7 +126,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
           <Separator className='my-8' />
 
           {/* Summary Section */}
-          <section className='space-y-4 mb-12'>
+          <section ref={summaryRef} className='space-y-4 mb-12'>
             <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.summary')}</h2>
             <p className='text-base text-foreground/90 leading-relaxed'>{t(prophet.summaryKey)}</p>
           </section>
@@ -127,7 +146,9 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                   className='space-y-3'
                 >
                   <h3 className='text-lg font-semibold text-foreground'>{chapter.title}</h3>
-                  <p className='text-base text-foreground/90 leading-relaxed'>{chapter.text}</p>
+                  <div className='text-base text-foreground/90 leading-relaxed'>
+                    <ReactMarkdown>{chapter.text}</ReactMarkdown>
+                  </div>
                 </div>
               ))}
             </div>
@@ -137,7 +158,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
           {prophet.lessonsKeys.length > 0 && (
             <>
               <Separator className='my-8' />
-              <section className='space-y-4 mb-12'>
+              <section ref={lessonsRef} className='space-y-4 mb-12'>
                 <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.lessons')}</h2>
                 <ul className='space-y-3'>
                   {prophet.lessonsKeys.map((lessonKey, index) => (
@@ -170,27 +191,53 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
         </motion.article>
 
         {/* Sidebar - Chapters Navigation (Positioned next to content) */}
-        {chapters.length > 1 && (
-          <aside className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'>
-            <div className='sticky top-1/2 -translate-y-1/2'>
-              <nav className='space-y-1'>
-                {chapters.map((chapter, index) => (
-                  <div key={index}>
-                    <button
-                      onClick={() => scrollToChapter(index)}
-                      className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                        activeChapter === index ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                      }`}
-                    >
-                      {chapter.title}
-                    </button>
-                    {index < chapters.length - 1 && <Separator className='my-1' />}
-                  </div>
-                ))}
-              </nav>
-            </div>
-          </aside>
-        )}
+        <aside className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'>
+          <div className='sticky top-1/2 -translate-y-1/2'>
+            <nav className='space-y-1'>
+              {/* Summary Link */}
+              <div>
+                <button
+                  onClick={() => scrollToChapter(-1)}
+                  className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                    activeChapter === -1 ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                  }`}
+                >
+                  {t('prophetDetail.summary')}
+                </button>
+                <Separator className='my-1' />
+              </div>
+
+              {/* Chapter Links */}
+              {chapters.map((chapter, index) => (
+                <div key={index}>
+                  <button
+                    onClick={() => scrollToChapter(index)}
+                    className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                      activeChapter === index ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                    }`}
+                  >
+                    {chapter.title}
+                  </button>
+                  {(index < chapters.length - 1 || prophet.lessonsKeys.length > 0) && <Separator className='my-1' />}
+                </div>
+              ))}
+
+              {/* Lessons Link */}
+              {prophet.lessonsKeys.length > 0 && (
+                <div>
+                  <button
+                    onClick={() => scrollToChapter(chapters.length)}
+                    className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
+                      activeChapter === chapters.length ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                    }`}
+                  >
+                    {t('prophetDetail.lessons')}
+                  </button>
+                </div>
+              )}
+            </nav>
+          </div>
+        </aside>
       </div>
     </div>
   );
