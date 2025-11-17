@@ -234,11 +234,11 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
         {/* Sidebar - Chapters Navigation (Positioned next to content) */}
         <AnimatePresence>
           {!focusMode && (
-            <motion.aside 
-              initial={{ opacity: 0, x: 100 }} 
-              animate={{ opacity: 1, x: 0 }} 
-              exit={{ opacity: 0, x: 100 }} 
-              transition={{ duration: 0.3 }} 
+            <motion.aside
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.3 }}
               className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'
             >
               <div className='sticky top-20 mb-8'>
