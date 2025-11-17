@@ -5,7 +5,7 @@ import { Link } from '@tanstack/react-router';
 import { Separator } from '@/components/ui/separator';
 import type { ProphetStory } from '@/types/prophet';
 import { useState, useEffect, useRef } from 'react';
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from 'react-markdown';
 
 interface ProphetDetailProps {
   prophet: ProphetStory;
@@ -70,7 +70,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
 
   const scrollToChapter = (index: number) => {
     let element: HTMLElement | null = null;
-    
+
     if (index === -1) {
       element = summaryRef.current;
     } else if (index === chapters.length) {
