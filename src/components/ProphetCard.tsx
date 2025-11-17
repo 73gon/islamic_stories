@@ -11,10 +11,8 @@ interface ProphetCardProps {
 export function ProphetCard({ prophet }: ProphetCardProps) {
   const { t } = useTranslation();
 
-  console.log('ProphetCard rendering, id:', prophet.id);
-
   return (
-    <Link to='/prophets/$id' params={{ id: prophet.id }} className='block h-full' onClick={() => console.log('Link clicked, navigating to:', prophet.id)}>
+    <Link to='/prophets/$id' params={{ id: prophet.id }} className='block h-full'>
       <motion.div whileHover={{ y: -4, transition: { duration: 0.2 } }} className='h-full'>
         <Card className='h-full border-border bg-card hover:border-primary/30 transition-colors'>
           <CardHeader className='space-y-2'>

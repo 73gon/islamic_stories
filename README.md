@@ -1,273 +1,120 @@
-# React + Vite Template
+# Propheten-Geschichten / Prophet Stories
 
-A modern, production-ready template for building React applications with TypeScript, Vite, and a comprehensive set of tools and libraries.
+An educational web application showcasing the lives and teachings of 25 prophets in Islam, presented in multiple languages with a modern, accessible interface.
 
-## 🚀 Features
+## Features
 
-- **⚡ Vite** - Lightning-fast development with Hot Module Replacement (HMR)
-- **⚛️ React 19** - Latest React with modern hooks and features
-- **📘 TypeScript** - Type safety and better developer experience
-- **🎨 Tailwind CSS** - Utility-first CSS framework with custom configuration
-- **🎭 Shadcn/ui** - Beautiful, accessible, and customizable UI components
-- **🌐 TanStack Router** - Type-safe routing with file-based routing
-- **🌍 i18next** - Internationalization (English & German included)
-- **🌙 Dark Mode** - Seamless theme switching with next-themes
-- **✨ Framer Motion** - Smooth animations and transitions
-- **📦 Component Library** - Pre-built UI components (Buttons, Inputs, Select, Tooltip, Toast, etc.)
-- **🔍 Lucide Icons** - Beautiful, consistent icon set
-- **🎯 State Management** - Zustand for global state
-- **📝 Forms** - React Hook Form with Zod validation
-- **🌐 HTTP Client** - Axios pre-configured
-- **🔧 ESLint** - Code quality and consistency
+- **25 Prophet Stories**: Complete narratives of prophets from Adam to Muhammad ﷺ, chronologically ordered
+- **Multi-language Support**: Currently available in German and English using i18next
+- **Chapter-based Stories**: Each prophet's story is divided into chapters for easier reading
+- **Interactive Navigation**:
+  - Sidebar navigation showing all chapters
+  - Automatic chapter highlighting while scrolling
+  - Smooth scroll-to-chapter functionality
+- **Responsive Design**: Fully responsive layout with mobile-first approach
+- **Dark Mode**: Built-in dark/light theme switching
+- **Search Functionality**: Quick search to find specific prophets
+- **Beautiful UI**: Modern design using Tailwind CSS and shadcn/ui components
 
-## 📦 Tech Stack
+## Technology Stack
 
-### Core
+- **React 19** - UI framework
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **TanStack Router** - Type-safe routing
+- **i18next** - Internationalization
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - High-quality component library
+- **Framer Motion** - Smooth animations
 
-- React 19.1.1
-- TypeScript 5.9.3
-- Vite 7.1.7
-- pnpm (package manager)
+## Project Structure
 
-### UI & Styling
+```
+src/
+├── components/          # React components
+│   ├── ProphetDetail.tsx    # Individual prophet detail view
+│   ├── Home.tsx             # Homepage with prophet list
+│   └── ui/                  # Reusable UI components
+├── data/
+│   └── prophets.ts          # Prophet data array
+├── languages/
+│   ├── de.json              # German translations
+│   └── en.json              # English translations
+├── routes/                  # TanStack Router routes
+├── types/
+│   └── prophet.ts           # TypeScript interfaces
+└── lib/                     # Utility functions
+```
 
-- Tailwind CSS 4.1.14
-- Radix UI (Dropdown, Select, Tooltip)
-- shadcn/ui components
-- next-themes (dark mode)
-- Framer Motion 12.23.22
-- Lucide React 0.545.0
+## Prophets Included
 
-### Routing & State
+1. Adam (آدم)
+2. Idris (إدريس)
+3. Nuh (نوح)
+4. Hud (هود)
+5. Salih (صالح)
+6. Ibrahim (إبراهيم)
+7. Lut (لوط)
+8. Ismail (إسماعيل)
+9. Ishaq (إسحاق)
+10. Yaqub (يعقوب)
+11. Yusuf (يوسف)
+12. Shuayb (شعيب)
+13. Ayyub (أيوب)
+14. Dhul-Kifl (ذو الكفل)
+15. Musa (موسى)
+16. Harun (هارون)
+17. Dawud (داوود)
+18. Sulayman (سليمان)
+19. Ilyas (إلياس)
+20. Al-Yasa (اليسع)
+21. Yunus (يونس)
+22. Zakariya (زكريا)
+23. Yahya (يحيى)
+24. Isa (عيسى)
+25. Muhammad ﷺ (محمد)
 
-- TanStack Router 1.132.47
-- Zustand 5.0.8
+## Development
 
-### Forms & Validation
+```bash
+# Install dependencies
+pnpm install
 
-- React Hook Form 7.64.0
-- Zod 4.1.12
-- @hookform/resolvers 5.2.2
+# Start development server
+pnpm run dev
+
+# Build for production
+pnpm run build
+
+# Preview production build
+pnpm run preview
+```
+
+## Features in Detail
+
+### Chapter Navigation
+
+Each prophet's story can be divided into multiple chapters. When viewing a prophet with multiple chapters:
+
+- A sidebar appears on the right showing all chapter titles
+- The active chapter is highlighted as you scroll
+- Click any chapter title to smoothly scroll to that section
+- The sidebar is vertically centered and sticky
 
 ### Internationalization
 
-- i18next 25.5.3
-- react-i18next 16.0.0
-- i18next-browser-languagedetector 8.2.0
+The application uses i18next for translations. All content including prophet names, stories, lessons, and UI elements are translatable. Add new languages by creating a JSON file in `src/languages/`.
 
-### HTTP & Utils
+### Responsive Design
 
-- Axios 1.12.2
-- clsx 2.1.1
-- tailwind-merge 3.3.1
-- class-variance-authority 0.7.1
+- Mobile: Single column layout, sidebar hidden
+- Desktop (lg+): Content centered with sidebar on the right
+- Smooth transitions and animations throughout
 
-### Notifications
+## License
 
-- Sonner 2.0.7
+© 2025 ryqo. All rights reserved.
 
-## 🛠️ Getting Started
+## Disclaimer
 
-### Prerequisites
-
-- Node.js 18+
-- pnpm (recommended) or npm/yarn
-
-### Installation
-
-1. Clone or download this template:
-
-```bash
-git clone https://github.com/73gon/template-react.git
-cd template
-```
-
-2. Install dependencies:
-
-```bash
-pnpm install
-```
-
-3. Install the TanStack Router plugin:
-
-```bash
-pnpm add -D @tanstack/router-plugin
-```
-
-4. Start the development server:
-
-```bash
-pnpm dev
-```
-
-5. Open your browser and navigate to `http://localhost:5173`
-
-## 📝 Available Scripts
-
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm preview` - Preview production build
-- `pnpm lint` - Run ESLint
-
-## 📁 Project Structure
-
-```
-template/
-├── public/              # Static assets
-├── src/
-│   ├── assets/         # Images, fonts, etc.
-│   ├── components/     # React components
-│   │   ├── ui/        # Shadcn/ui components
-│   │   ├── darkmode.tsx
-│   │   └── Home.tsx   # Main showcase page
-│   ├── languages/      # i18n translations
-│   │   ├── en.json
-│   │   └── de.json
-│   ├── lib/           # Utility functions
-│   │   ├── i18n.ts   # i18n configuration
-│   │   └── utils.ts  # Helper functions
-│   ├── routes/        # TanStack Router routes
-│   │   ├── __root.tsx
-│   │   └── index.tsx
-│   ├── App.tsx        # Main app component
-│   ├── main.tsx       # Entry point
-│   ├── router.ts      # Router configuration
-│   └── routeTree.gen.ts # Generated route tree
-├── components.json     # Shadcn/ui config
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-```
-
-## 🎨 UI Components
-
-This template includes the following pre-built components:
-
-- **Button** - Multiple variants (default, destructive, outline, secondary, ghost, link) and sizes
-- **Input** - Text inputs with proper styling
-- **Textarea** - Multi-line text input
-- **Select** - Dropdown select with Radix UI
-- **Tooltip** - Hover tooltips
-- **Toast** - Notifications with Sonner
-- **Dropdown Menu** - Context menus and dropdowns
-- **Dark Mode Toggle** - Theme switcher
-
-All components are fully typed, accessible, and customizable.
-
-## 🌍 Internationalization
-
-The template supports multiple languages out of the box:
-
-- English (en)
-- German (de)
-
-Add more languages by creating new JSON files in `src/languages/` and importing them in `src/lib/i18n.ts`.
-
-## 🌙 Dark Mode
-
-Dark mode is implemented using `next-themes` and supports:
-
-- Light theme
-- Dark theme
-- System preference
-
-Toggle between themes using the `ModeToggle` component.
-
-## 🧭 Routing
-
-TanStack Router provides type-safe, file-based routing. Routes are defined in the `src/routes/` directory:
-
-- `__root.tsx` - Root layout with router devtools
-- `index.tsx` - Home page route
-
-Add new routes by creating files in the `routes` directory. The route tree is automatically generated by the TanStack Router plugin.
-
-## 🎯 State Management
-
-Zustand is included for global state management. Create stores in a new `src/stores/` directory as needed.
-
-## 📝 Forms & Validation
-
-Use React Hook Form with Zod for form handling:
-
-```tsx
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-
-const schema = z.object({
-  email: z.string().email(),
-});
-
-const { register, handleSubmit } = useForm({
-  resolver: zodResolver(schema),
-});
-```
-
-## 🔧 Configuration
-
-### Tailwind CSS
-
-Configure Tailwind in `tailwind.config.js` or through the `@tailwindcss/vite` plugin.
-
-### Shadcn/ui
-
-Component configuration is in `components.json`. Add new components with:
-
-```bash
-npx shadcn@latest add [component-name]
-```
-
-### ESLint
-
-ESLint rules are configured in `eslint.config.js`.
-
-## 📦 Building for Production
-
-```bash
-pnpm build
-```
-
-The build output will be in the `dist` directory, ready for deployment.
-
-## 🚀 Deployment
-
-This template can be deployed to any static hosting service:
-
-- Vercel
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
-- AWS S3 + CloudFront
-
-## 🤝 Contributing
-
-Feel free to customize this template for your needs. Some suggestions:
-
-- Add more UI components
-- Implement authentication
-- Add API integration examples
-- Create more routes
-- Add unit tests (Vitest recommended)
-- Add E2E tests (Playwright/Cypress)
-
-## 📄 License
-
-This template is free to use for personal and commercial projects.
-
-## 🙏 Acknowledgments
-
-Built with amazing open-source projects:
-
-- [React](https://react.dev/)
-- [Vite](https://vite.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn/ui](https://ui.shadcn.com/)
-- [TanStack Router](https://tanstack.com/router)
-- [Radix UI](https://www.radix-ui.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-
----
-
-**Happy coding! 🎉**
+This is an educational resource. Please consult authentic Islamic sources for religious guidance.

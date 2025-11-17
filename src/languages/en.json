@@ -1,574 +1,598 @@
 {
   "homepage": {
-    "title": "Geschichten der Propheten",
-    "subtitle": "Entdecken Sie das Leben und die Lehren der Gesandten Allahs",
-    "searchPlaceholder": "Nach einem Propheten suchen..."
+    "title": "Stories of the Prophets",
+    "subtitle": "Discover the lives and teachings of Allah's Messengers",
+    "searchPlaceholder": "Search for a prophet..."
   },
   "header": {
-    "title": "Propheten-Geschichten",
-    "home": "Startseite"
+    "title": "Prophet Stories",
+    "home": "Home"
   },
   "footer": {
-    "copyright": "© 2025 ryqo. Alle Rechte vorbehalten.",
-    "disclaimer": "Dies ist eine Bildungsressource. Bitte konsultieren Sie authentische islamische Quellen für religiöse Anleitung."
+    "copyright": "© 2025 ryqo. All rights reserved.",
+    "disclaimer": "This is an educational resource. Please consult authentic Islamic sources for religious guidance."
   },
   "language": {
-    "select": "Sprache",
+    "select": "Language",
     "english": "English",
-    "german": "Deutsch"
+    "german": "German"
   },
   "notFound": {
-    "title": "Seite nicht gefunden",
-    "description": "Die gesuchte Seite existiert nicht.",
-    "backHome": "Zurück zur Startseite"
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist.",
+    "backHome": "Back to Home"
   },
   "prophetDetail": {
-    "era": "Epoche",
-    "summary": "Zusammenfassung",
-    "story": "Die Geschichte",
-    "lessons": "Wichtige Lehren",
-    "quranReferences": "Koran-Verweise",
-    "backToList": "Zurück zu allen Propheten"
+    "era": "Era",
+    "summary": "Summary",
+    "story": "The Story",
+    "lessons": "Important Lessons",
+    "quranReferences": "Qur'an References",
+    "backToList": "Back to all Prophets"
   },
   "prophets": {
     "adam": {
       "name": "Adam",
-      "title": "Der erste Prophet und Mensch",
-      "era": "Der Beginn der Menschheit",
-      "summary": "Prophet Adam (Friede sei mit ihm) war der erste Mensch und der erste Prophet Allahs. Allah erschuf ihn aus Lehm, ehrte ihn mit Wissen und machte ihn zum ersten Lehrer und Führer der Menschheit.",
+      "title": "The First Prophet and Human",
+      "era": "The Beginning of Humanity",
+      "summary": "Prophet Adam (peace be upon him) was the first human and the first Prophet of Allah. Allah created him from clay, honored him with knowledge, and made him the first teacher and guide of humanity.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Erschaffung Adams",
-            "text": "Allah erschuf Adam aus Lehm und formte ihn zu einer vollkommenen Gestalt. Danach blies Allah ihm Seinen Geist ein und verlieh ihm Leben. Engel wurden angewiesen, sich als Zeichen des Respekts vor Allahs neuer Schöpfung niederzuwerfen. Alle gehorchten außer Iblis, der sich aus Arroganz und Hochmut weigerte und damit zu den Ungläubigen wurde."
+            "title": "Chapter 1: The Creation of Adam",
+            "text": "Allah created Adam from clay and shaped him into a perfect form. Then Allah breathed His spirit into him and granted him life. The angels were commanded to prostrate themselves before Allah’s new creation as a sign of respect. All obeyed except Iblis, who refused out of arrogance and pride, becoming one of the disbelievers."
           },
           {
-            "title": "Kapitel 2: Das Wissen, das Adam erhielt",
-            "text": "Allah lehrte Adam die Namen und Eigenschaften aller Dinge – ein Wissen, das selbst die Engel nicht besaßen. Dieses göttliche Wissen zeigte die besondere Stellung des Menschen und seine Fähigkeit zu Bewusstsein, Sprache, Lernen und freiem Willen."
+            "title": "Chapter 2: The Knowledge Given to Adam",
+            "text": "Allah taught Adam the names and characteristics of all things — knowledge even the angels did not possess. This divine knowledge demonstrated the special status of humanity and its capacity for awareness, language, learning, and free will."
           },
           {
-            "title": "Kapitel 3: Leben im Paradies",
-            "text": "Adam und seine Frau Hawwa (Eva) lebten im Paradies und genossen vollkommenen Frieden, Versorgung und Nähe zu Allah. Ihnen wurde nur eines verboten: sich einem bestimmten Baum zu nähern. Trotz dieser Freiheit und Ehre ließ Iblis nicht davon ab, sie in Versuchung zu führen."
+            "title": "Chapter 3: Life in Paradise",
+            "text": "Adam and his wife Hawwa (Eve) lived in Paradise, enjoying complete peace, provision, and closeness to Allah. They were forbidden only one thing: not to approach a certain tree. Despite this honor and freedom, Iblis continued attempting to mislead them."
           },
           {
-            "title": "Kapitel 4: Die Versuchung und der Fehler",
-            "text": "Iblis flüsterte Adam und Hawwa ein und machte ihnen falsche Versprechungen. Schließlich wurden sie dazu verleitet, vom verbotenen Baum zu essen. Unmittelbar danach wurde ihnen ihre Blöße bewusst und sie erkannten ihren Fehler. Sie wandten sich sofort reumütig an Allah, der ihnen Worte der Reue eingab."
+            "title": "Chapter 4: The Temptation and the Mistake",
+            "text": "Iblis whispered to Adam and Hawwa and made false promises. Eventually, they were deceived into eating from the forbidden tree. Immediately they became aware of their nakedness and recognized their mistake. They turned to Allah in sincere repentance, and Allah taught them words with which to seek forgiveness."
           },
           {
-            "title": "Kapitel 5: Reue und Vergebung",
-            "text": "Adam und Hawwa bereuten aufrichtig, und Allah – der Allvergebende – vergab ihnen. Dies markiert den grundlegenden Unterschied zwischen Adam und Iblis: Adam sündigte, bereute und erhielt Vergebung; Iblis sündigte, war hochmütig und verweigerte Reue. Allahs Barmherzigkeit zeigte sich darin, dass Er die Reue sofort annahm."
+            "title": "Chapter 5: Repentance and Forgiveness",
+            "text": "Adam and Hawwa repented sincerely, and Allah — the Most Forgiving — accepted their repentance. This marks the fundamental difference between Adam and Iblis: Adam sinned, repented, and was forgiven; Iblis sinned, was arrogant, and refused repentance. Allah's mercy was shown by accepting their repentance immediately."
           },
           {
-            "title": "Kapitel 6: Die Sendung zur Erde",
-            "text": "Adam, Hawwa und ihre Nachkommen wurden zur Erde gesandt, nicht als Strafe, sondern als Teil von Allahs weisem Plan. Allah versprach: Rechtleitung wird immer kommen, und diejenigen, die ihr folgen, werden weder Angst noch Trauer erfahren. Adam wurde zum ersten Propheten und Lehrer der Menschheit gemacht und legte die Grundlagen von Glauben, Anbetung und moralischem Verhalten."
+            "title": "Chapter 6: The Mission on Earth",
+            "text": "Adam, Hawwa, and their descendants were sent to Earth — not as punishment, but as part of Allah’s wise plan. Allah promised that guidance would always come, and whoever followed it would have no fear nor grief. Adam became the first Prophet and teacher of humanity, laying the foundations of faith, worship, and moral behavior."
           }
         ]
       },
       "lessons": [
-        "Wissen ist ein göttliches Geschenk und unterscheidet den Menschen von anderen Geschöpfen.",
-        "Aufrichtige Reue wird von Allah immer angenommen, egal wie groß der Fehler war.",
-        "Hochmut und Arroganz führen zur inneren und äußeren Zerstörung, wie das Beispiel Iblis zeigt.",
-        "Der Mensch besitzt freien Willen und trägt Verantwortung für seine Entscheidungen.",
-        "Die Erde ist ein Prüfungsort, nicht eine Verbannung – mit göttlicher Rechtleitung als Kompass."
+        "Knowledge is a divine gift that distinguishes humans from other creatures.",
+        "Sincere repentance is always accepted by Allah, no matter the mistake.",
+        "Arrogance and pride lead to destruction, as seen in the example of Iblis.",
+        "Humans possess free will and bear responsibility for their choices.",
+        "Earth is a place of testing, not exile — with divine guidance as the compass."
       ]
     },
+
     "nuh": {
       "name": "Nuh",
-      "title": "Der Prediger des Glaubens",
-      "era": "Antike Zeiten",
-      "summary": "Prophet Nuh (Noah, Friede sei mit ihm) rief sein Volk 950 Jahre lang dazu auf, Allah allein anzubeten. Als sie sich weigerten zuzuhören, befahl ihm Allah, eine Arche zu bauen, um die Gläubigen vor einer großen Flut zu retten.",
+      "title": "The Preacher of Faith",
+      "era": "Ancient Times",
+      "summary": "Prophet Nuh (Noah, peace be upon him) called his people for 950 years to worship Allah alone. When they refused, Allah commanded him to build an ark to save the believers from a great flood.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Nuh",
-            "text": "Prophet Nuh lebte unter einem Volk, das sich von der Anbetung Allahs abgewandt hatte und begonnen hatte, Götzen anzubeten. 950 Jahre lang rief er sie geduldig dazu auf, ihre falschen Götter aufzugeben und zum Einen Wahren Gott zurückzukehren. Er verwendete jeden Ansatz – sprach nachts und tagsüber zu ihnen, privat und öffentlich –, aber die meisten weigerten sich zuzuhören. Die Anführer verspotteten ihn und beschuldigten ihn, verrückt zu sein. Als klar wurde, dass sie nicht glauben würden, befahl Allah Nuh, eine riesige Arche zu bauen. Sein Volk verspottete ihn, als er das Schiff weit entfernt von jedem Wasser baute. Als die Arche fertig war, befahl ihm Allah, von jedem Tier ein Paar und die Gläubigen an Bord zu nehmen. Die große Flut kam, bedeckte die Erde und zerstörte alle, die die Wahrheit ablehnten. Selbst Nuhs eigener Sohn weigerte sich, die Arche zu besteigen, und kam in der Flut um. Nachdem das Wasser zurückgewichen war, verließen Nuh und die Gläubigen die Arche, und das Leben begann neu auf der Erde."
+            "title": "Chapter 1: The Story of Nuh",
+            "text": "Prophet Nuh lived among a people who had turned away from the worship of Allah and began worshipping idols. For 950 years, he patiently called them to abandon their false gods and return to the One True God. He used every method — speaking by night and day, privately and publicly — but most refused. The leaders mocked him and called him insane. When it was clear they would not believe, Allah commanded Nuh to build a massive ark. His people mocked him as he built the ship far from any body of water. When the ark was complete, Allah commanded him to take a pair of every animal and the believers aboard. A great flood came, covering the earth and destroying those who rejected the truth. Even Nuh’s own son refused to board the ark and drowned. After the waters receded, Nuh and the believers disembarked, and life on earth began anew."
           }
         ]
       },
       "lessons": [
-        "Geduld und Ausdauer beim Ruf zur Wahrheit, selbst angesichts von Ablehnung",
-        "Wahrer Erfolg wird nicht an Zahlen gemessen, sondern an der Treue zu Allahs Befehl",
-        "Rechtleitung kommt allein von Allah; selbst Propheten können andere nicht zum Glauben zwingen",
-        "Göttliche Gerechtigkeit wird letztendlich siegen, auch wenn es Zeit braucht"
+        "Patience and perseverance in calling to the truth, even in the face of rejection.",
+        "True success is measured by obedience to Allah, not by numbers of followers.",
+        "Guidance comes only from Allah; even prophets cannot force belief.",
+        "Divine justice eventually prevails, even if it takes time."
       ]
     },
+
     "ibrahim": {
       "name": "Ibrahim",
-      "title": "Der Freund Allahs",
-      "era": "Antikes Mesopotamien",
-      "summary": "Prophet Ibrahim (Abraham, Friede sei mit ihm) stellte den Götzendienst seines Volkes in Frage und hielt fest an seinem Glauben an den Einen Gott. Er ist bekannt für sein absolutes Vertrauen in Allah und seine Bereitschaft, alles für Ihn zu opfern.",
+      "title": "The Friend of Allah",
+      "era": "Ancient Mesopotamia",
+      "summary": "Prophet Ibrahim (Abraham, peace be upon him) challenged the idolatry of his people and held firmly to belief in the One God. He is known for his unwavering trust in Allah and willingness to sacrifice whatever was required.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Ibrahim",
-            "text": "Prophet Ibrahim wurde in eine Gesellschaft hineingeboren, die tief im Götzendienst verwurzelt war. Selbst sein eigener Vater, Azar, war ein Götzenmacher. Von klein auf hinterfragte Ibrahim die Anbetung dieser leblosen Statuen. Er forderte sein Volk auf, logisch zu denken: Wie könnten von Menschenhand gemachte Objekte der Anbetung würdig sein? Als sein Volk in seinem Unglauben verharrte, zerstörte er ihre Götzen und ließ nur den größten intakt. Als er konfrontiert wurde, schlug er vor, sie sollten den großen Götzen fragen, wer die anderen zerstört habe, und entlarvte damit die Absurdität der Anbetung machtloser Objekte. Wütend warfen die Leute ihn in ein riesiges Feuer, aber Allah befahl dem Feuer, kühl und sicher für Ibrahim zu sein. Er wanderte in verschiedene Länder aus und rief die Menschen immer zum Monotheismus auf. Sein Glaube wurde geprüft, als Allah ihm in einem Traum befahl, seinen geliebten Sohn Ismail zu opfern. Sowohl Vater als auch Sohn unterwarfen sich Allahs Willen, und im letzten Moment stellte Allah stattdessen einen Widder zur Opferung zur Verfügung. Ibrahim und Ismail bauten später die Ka'ba in Mekka als Haus der Anbetung für Allah."
+            "title": "Chapter 1: The Story of Ibrahim",
+            "text": "Prophet Ibrahim was born into a society deeply rooted in idol worship. Even his father, Azar, crafted idols. From a young age, Ibrahim questioned the worship of lifeless statues. He urged his people to think logically: how could man-made objects be worthy of worship? When his people persisted in disbelief, he destroyed their idols, leaving only the largest intact. When confronted, he told them to ask the big idol who destroyed the others, exposing the absurdity of worshipping powerless objects. Furious, his people threw him into a blazing fire, but Allah made the fire cool and safe for him. Ibrahim migrated to different lands, calling people to monotheism. His faith was tested when Allah commanded him in a dream to sacrifice his beloved son Ismail. Both father and son submitted, and Allah replaced Ismail with a ram. Later, Ibrahim and Ismail built the Ka'bah in Mecca as a house of worship for Allah."
           }
         ]
       },
       "lessons": [
-        "Unerschütterlicher Glaube und Vertrauen in Allah, selbst angesichts schwerer Prüfungen",
-        "Die Bedeutung der Verwendung von Vernunft und Logik zum Verständnis der Wahrheit",
-        "Wahre Hingabe bedeutet, bereit zu sein, das Liebste zu opfern",
-        "Familienbande haben keinen Vorrang vor der Wahrheit und der Anbetung Allahs"
+        "Unshakable faith and trust in Allah, even in severe trials.",
+        "Reason and logic are important tools in understanding the truth.",
+        "True devotion means being willing to sacrifice what is most beloved.",
+        "Family bonds do not outweigh the truth and devotion to Allah."
       ]
     },
+
     "musa": {
       "name": "Musa",
-      "title": "Der mit Allah Sprach",
-      "era": "Antikes Ägypten",
-      "summary": "Prophet Musa (Moses, Friede sei mit ihm) wurde zum Pharao gesandt, um die Kinder Israels von der Unterdrückung zu befreien. Er erhielt die Thora und vollbrachte mit Allahs Erlaubnis viele Wunder.",
+      "title": "The One Who Spoke with Allah",
+      "era": "Ancient Egypt",
+      "summary": "Prophet Musa (Moses, peace be upon him) was sent to Pharaoh to free the Children of Israel from oppression. He received the Torah and performed many miracles with Allah’s permission.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Musa",
-            "text": "Prophet Musa wurde zu einer Zeit geboren, als der Pharao, der tyrannische Herrscher Ägyptens, aus Angst vor einer Prophezeiung alle neugeborenen israelitischen Jungen töten ließ. Durch Allahs Plan legte Musas Mutter ihn in einen Korb im Fluss, und er landete schließlich im Palast des Pharao selbst, wo er aufwuchs. Als Erwachsener tötete Musa versehentlich einen Ägypter, der einen Israeliten unterdrückte, und floh nach Madyan. Dort heiratete er und arbeitete als Hirte. Eines Tages, als er mit seiner Familie reiste, sah er ein Feuer auf dem Berg Sinai. Als er sich näherte, sprach Allah direkt zu ihm, ernannte ihn zum Propheten und befahl ihm, nach Ägypten zurückzukehren, um sich dem Pharao zu stellen. Musa bat Allah, seinen Bruder Harun (Aaron) zur Unterstützung zu senden. Sie gingen zum Pharao und baten ihn, die Israeliten zu befreien und Allah allein anzubeten. Der Pharao lehnte arrogant ab und behauptete, selbst ein Gott zu sein. Allah gab Musa viele Wunder: Sein Stab verwandelte sich in eine Schlange, seine Hand leuchtete, und später trafen zehn Plagen Ägypten. Trotz dieser Zeichen blieb der Pharao stur. Schließlich befahl Allah Musa, die Israeliten aus Ägypten zu führen. Als sie das Rote Meer erreichten und die Armee des Pharao sie verfolgte, teilte Allah das Meer, sodass sie sicher überqueren konnten, und ertränkte dann den Pharao und seine Armee. Musa führte sein Volk jahrelang und empfing die Thora auf dem Berg Sinai, während er ständig versuchte, sie trotz ihres wiederholten Ungehorsams zu führen."
+            "title": "Chapter 1: The Story of Musa",
+            "text": "Prophet Musa was born at a time when Pharaoh, the tyrannical ruler of Egypt, ordered the killing of newborn Israelite boys out of fear of a prophecy. By Allah’s plan, Musa’s mother placed him in a basket in the river, and he was found and raised in Pharaoh’s palace. As an adult, Musa accidentally killed an Egyptian who was oppressing an Israelite and fled to Madyan, where he married and worked as a shepherd. One day, while traveling with his family, he saw a fire on Mount Sinai. Approaching it, Allah spoke to him, appointed him as a prophet, and commanded him to return to Egypt. Musa asked Allah to send his brother Harun to support him. Together, they confronted Pharaoh, calling him to worship Allah and release the Israelites. Pharaoh arrogantly refused. Allah granted Musa miracles: his staff turned into a serpent, his hand shone brightly, and Egypt was afflicted with ten plagues. Despite these signs, Pharaoh remained stubborn. Finally, Allah commanded Musa to lead the Israelites out of Egypt. When they reached the Red Sea and Pharaoh’s army pursued them, Allah parted the sea, enabling the Israelites to cross and drowning Pharaoh and his army. Musa continued guiding his people and received the Torah on Mount Sinai."
           }
         ]
       },
       "lessons": [
-        "Allahs Plan wirkt auf mysteriöse Weise – Musa wurde im Haus seines Feindes aufgezogen",
-        "Wahre Macht gehört allein Allah; der mächtige Pharao war hilflos gegen Seinen Willen",
-        "Führung erfordert Geduld, besonders bei der Führung von Menschen, die sich der Führung widersetzen",
-        "Direkte Kommunikation mit Allah durch Gebet ist eine Quelle der Stärke und Klarheit"
+        "Allah’s plan unfolds in ways beyond human understanding.",
+        "True power belongs only to Allah; even mighty rulers are helpless before Him.",
+        "Leadership requires patience, especially when guiding resistant people.",
+        "Direct communication with Allah through prayer brings strength and clarity."
       ]
     },
+
     "isa": {
       "name": "Isa",
-      "title": "Der Messias",
-      "era": "Antikes Palästina",
-      "summary": "Prophet Isa (Jesus, Friede sei mit ihm) wurde auf wundersame Weise ohne Vater an Maryam (Maria) geboren. Er vollbrachte mit Allahs Erlaubnis viele Wunder und rief die Menschen dazu auf, Allah allein anzubeten.",
+      "title": "The Messiah",
+      "era": "Ancient Palestine",
+      "summary": "Prophet Isa (Jesus, peace be upon him) was miraculously born without a father to Maryam (Mary). He performed many miracles by Allah’s permission and called people to worship Allah alone.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Isa",
-            "text": "Prophet Isa wurde durch eine wundersame Geburt ohne Vater an Maryam, eine rechtschaffene und fromme Frau, geboren. Der Engel Jibril (Gabriel) erschien ihr und gab ihr die Nachricht, dass sie einen Sohn gebären würde, der ein großer Prophet sein würde. Als sie ihn gebar, brachte sie ihn zu ihrem Volk, das sie des Fehlverhaltens beschuldigte. Aber der Säugling Isa sprach aus der Wiege und erklärte sich zum Propheten Allahs und bestätigte die Reinheit seiner Mutter. Als er heranwuchs, wurden Isa mit Allahs Erlaubnis viele Wunder gewährt: Er heilte Blinde und Aussätzige, erweckte Tote zum Leben und erschuf einen Vogel aus Lehm, der lebendig wurde, als er hineinhauchte. Er erhielt das Injil (Evangelium) als göttliche Offenbarung und rief die Kinder Israels dazu auf, zur wahren Anbetung Allahs allein zurückzukehren und die Verfälschungen aufzugeben, die sich in ihre Religion eingeschlichen hatten. Viele Menschen glaubten an ihn, aber die religiösen Führer seiner Zeit lehnten ihn ab und planten, ihn zu töten. Allah rettete Isa jedoch, indem er ihn in den Himmel erhob. Er wurde nicht gekreuzigt; vielmehr wurde jemand so gemacht, dass er ihm ähnelte. Im islamischen Glauben wird Isa gegen Ende der Zeit zurückkehren, um Gerechtigkeit und Wahrheit wiederherzustellen."
+            "title": "Chapter 1: The Story of Isa",
+            "text": "Prophet Isa was born miraculously without a father to Maryam, a righteous and pious woman. The angel Jibril appeared to her with the news of the blessed child. When she presented Isa to her people, they accused her of wrongdoing, but the infant Isa spoke from the cradle, declaring himself a prophet of Allah and affirming his mother’s purity. Isa was granted miracles by Allah’s permission: healing the blind and lepers, raising the dead, and creating a bird from clay. He received the Injil (Gospel) and called the Children of Israel to return to true monotheism and abandon corruptions in their religion. Some believed, but many leaders opposed him and plotted to kill him. Allah saved Isa by raising him to the heavens, and someone was made to resemble him and was crucified instead. In Islam, Isa will return at the end of times to restore justice and truth."
           }
         ]
       },
       "lessons": [
-        "Allahs Macht ist unbegrenzt; Er erschafft, wie Er will, sogar ohne übliche Mittel",
-        "Wunder sind Zeichen von Allah, kein Beweis für Göttlichkeit",
-        "Wahres Prophetentum bedeutet, sich Allah zu unterwerfen und andere dazu aufzurufen",
-        "Die Botschaft aller Propheten ist dieselbe: Betet Allah allein an"
+        "Allah’s power has no limits; He creates as He wills.",
+        "Miracles are signs from Allah, not proof of divinity.",
+        "True prophethood means submission to Allah and calling others to the same.",
+        "All prophets preached the same message: worship Allah alone."
       ]
     },
+
     "yusuf": {
       "name": "Yusuf",
-      "title": "Der Wahrhaftige und Geduldige",
-      "era": "Antikes Ägypten",
-      "summary": "Prophet Yusuf (Josef, Friede sei mit ihm) ertrug immense Prüfungen, einschließlich Verrat durch seine Brüder und falscher Gefangenschaft, blieb aber standhaft. Seine Geschichte ist eine Geschichte von Geduld, Vergebung und ultimativem Triumph.",
+      "title": "The Truthful and Patient",
+      "era": "Ancient Egypt",
+      "summary": "Prophet Yusuf (Joseph, peace be upon him) endured immense trials, including betrayal by his brothers and wrongful imprisonment. His story is one of patience, forgiveness, and eventual triumph.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Yusuf",
-            "text": "Prophet Yusuf war der geliebte Sohn von Prophet Ya'qub (Jakob). Seine Brüder waren eifersüchtig auf die Liebe, die ihr Vater ihm zeigte, also planten sie gegen ihn. Sie warfen ihn in einen Brunnen und sagten ihrem Vater, dass ein Wolf ihn getötet habe. Yusuf wurde von einer Karawane gefunden und als Sklave in Ägypten verkauft. Er wurde von einem wohlhabenden Ägypter gekauft, wo er als rechtschaffener und gutaussehender junger Mann aufwuchs. Die Frau seines Herrn versuchte, ihn zu verführen, aber Yusuf weigerte sich und entschied sich dafür, seine Integrität zu bewahren. Sie beschuldigte ihn fälschlicherweise, und er wurde inhaftiert. Im Gefängnis interpretierte er Träume für zwei Insassen und zeigte seine Weisheit und sein Vertrauen in Allah. Jahre später, als der König einen beunruhigenden Traum hatte, wurde Yusuf gerufen, um ihn zu interpretieren. Er sagte sieben Jahre Überfluss voraus, gefolgt von sieben Jahren Hungersnot, und riet dazu, Getreide zu lagern. Beeindruckt von seiner Weisheit, ließ der König ihn frei und setzte ihn über die Lager. Während der Hungersnot kamen Yusufs Brüder nach Ägypten, um Nahrung zu suchen. Obwohl sie ihn nicht erkannten, kannte Yusuf sie. Durch eine Reihe von Ereignissen enthüllte er seine Identität und vergab ihnen vollständig. Er schickte dann nach seinem Vater, und die Familie wurde wieder vereint. Sein Kindheitstraum – in dem die Sonne, der Mond und elf Sterne sich vor ihm niederwarfen – wurde erfüllt."
+            "title": "Chapter 1: The Story of Yusuf",
+            "text": "Prophet Yusuf was the beloved son of Prophet Yaqub (Jacob). His brothers grew jealous of the love their father showed him and plotted against him. They threw him into a well and told their father a wolf had killed him. Yusuf was found by a caravan and sold as a slave in Egypt. He grew into a righteous and handsome young man in the house of a nobleman. The nobleman’s wife tried to seduce him, but Yusuf refused and chose integrity. She falsely accused him, leading to his imprisonment. In prison, Yusuf interpreted dreams for fellow inmates. Years later, the king dreamed a troubling vision, and Yusuf interpreted it, foretelling seven years of abundance followed by seven years of famine. Impressed, the king freed Yusuf and appointed him over the storehouses. During the famine, Yusuf’s brothers came to Egypt seeking food. Yusuf recognized them, but they did not recognize him. Through a series of events, he revealed his identity and forgave them. His family was reunited, fulfilling his childhood dream of the sun, moon, and eleven stars bowing before him."
           }
         ]
       },
       "lessons": [
-        "Geduld und Vertrauen in Allah bringen schließlich Erleichterung und Belohnung",
-        "Die Aufrechterhaltung von Integrität und Moral, auch unter schwierigen Umständen, ist wesentlich",
-        "Vergebung und Versöhnung bringen Frieden und Heilung",
-        "Allahs Plan mag manchmal schwer zu verstehen sein, aber er ist immer perfekt"
+        "Patience and trust in Allah eventually bring relief and reward.",
+        "Integrity and morality must be upheld even under difficult circumstances.",
+        "Forgiveness and reconciliation bring peace and healing.",
+        "Allah’s plan may be hard to understand initially, but it is always perfect."
       ]
     },
+
     "sulayman": {
       "name": "Sulayman",
-      "title": "Der weise König",
-      "era": "Antikes Jerusalem",
-      "summary": "Prophet Sulayman (Salomo, Friede sei mit ihm) wurde immense Weisheit, Macht und die Fähigkeit verliehen, mit Tieren und Dschinn zu kommunizieren. Er nutzte all seine Segnungen, um Allah zu dienen und Gerechtigkeit zu etablieren.",
+      "title": "The Wise King",
+      "era": "Ancient Jerusalem",
+      "summary": "Prophet Sulayman (Solomon, peace be upon him) was granted immense wisdom, power, and the ability to communicate with animals and jinn. He used all his blessings to serve Allah and establish justice.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Sulayman",
-            "text": "Prophet Sulayman war der Sohn von Prophet Dawud (David) und erbte nach ihm das Prophetentum und die Königswürde. Allah verlieh ihm außergewöhnliche Fähigkeiten: Er konnte die Sprache der Vögel und Tiere verstehen, und er befehligte eine Armee von Dschinn und Menschen. Er betete zu Allah um ein Königreich, das es weder vorher noch nachher gab, und Allah gewährte seine Bitte. Trotz seiner immensen Macht und seines Reichtums blieb Sulayman bescheiden und Allah ergeben. Er nutzte seine Fähigkeiten weise und gerecht. Eine berühmte Geschichte handelt von einem Wiedehopf-Vogel, der ihm vom Königreich Saba berichtete, das von Königin Bilqis regiert wurde, wo die Menschen die Sonne statt Allah anbeteten. Sulayman schickte einen Brief, in dem er sie zum Islam einlud. Sie war von seiner Weisheit beeindruckt und besuchte schließlich seinen Palast. Als sie die Pracht seines Königreichs und die Klarheit seiner Botschaft sah, unterwarf sie sich Allah. Sulayman beaufsichtigte den Bau großer architektonischer Projekte, einschließlich der Erweiterung der Masjid al-Aqsa in Jerusalem. Die Dschinn arbeiteten unter seinem Befehl, bauten Paläste und schufen Kunstwerke. Sulayman nutzte seine Gaben nie für persönlichen Ruhm; stattdessen dankte er Allah ständig und blieb sich der vorübergehenden Natur weltlicher Macht bewusst."
+            "title": "Chapter 1: The Story of Sulayman",
+            "text": "Prophet Sulayman was the son of Prophet Dawud (David) and inherited prophethood and kingship. Allah granted him exceptional abilities: understanding the speech of birds and animals and commanding an army of humans and jinn. He prayed for a unique kingdom unlike any other, and Allah granted his request. Despite his vast power and wealth, Sulayman remained humble and devoted to Allah. A famous story mentions the hoopoe bird informing him about the kingdom of Sheba, ruled by Queen Bilqis, where the people worshipped the sun. Sulayman invited her to Islam. Impressed by his wisdom and the signs she witnessed, she embraced Islam. Sulayman oversaw great construction projects, including expanding Masjid al-Aqsa in Jerusalem. The jinn worked under his command, building palaces and crafting works of art. He constantly thanked Allah and remained aware of the temporary nature of worldly power."
           }
         ]
       },
       "lessons": [
-        "Wahre Macht ist ein Vertrauen von Allah und sollte verwendet werden, um Ihm zu dienen und der Menschheit zu nützen",
-        "Weisheit und Gerechtigkeit sind die Kennzeichen rechtschaffener Führung",
-        "Dankbarkeit gegenüber Allah, unabhängig von Segnungen, hält einen geerdet und bescheiden",
-        "Materieller Reichtum und politische Macht bedeuten nichts ohne Glauben und guten Charakter"
+        "True power is a trust from Allah and must be used in service to Him.",
+        "Wisdom and justice are essential qualities of righteous leadership.",
+        "Gratitude keeps a person grounded regardless of blessings.",
+        "Wealth and political power mean nothing without faith and good character."
       ]
     },
+
     "idris": {
       "name": "Idris",
-      "title": "Der standhafte Gelehrte",
-      "era": "Frühe Menschheitsgeschichte",
-      "summary": "Prophet Idris (Friede sei mit ihm) wird als wahrhaftiger Prophet beschrieben, der viel Wissen besaß, geduldig war und die Menschen zu Rechtschaffenheit aufrief.",
+      "title": "The Steadfast Scholar",
+      "era": "Early Human History",
+      "summary": "Prophet Idris (peace be upon him) is described as truthful, knowledgeable, patient, and steadfast in calling people to righteousness.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Idris",
-            "text": "Über Prophet Idris sind nur wenige Details überliefert, doch der Koran beschreibt ihn als wahrhaftig und als einen Propheten. Er war bekannt für sein Wissen, seine Geduld und seine Standhaftigkeit im Gehorsam gegenüber Allah. Nach Überlieferungen rief er die Menschen dazu auf, Gutes zu tun, das Gebet zu verrichten und Ungerechtigkeit zu meiden. Einige Überlieferungen berichten, dass Allah seinen Rang erhob und ihn zu einem hohen Platz erhob."
+            "title": "Chapter 1: The Story of Idris",
+            "text": "Few details about Prophet Idris are known, but the Qur'an describes him as truthful and a prophet. He was known for his deep knowledge, patience, and steadfastness in obedience to Allah. According to some narrations, he called people to goodness, prayer, and justice. Allah raised him to a high position."
           }
         ]
       },
       "lessons": [
-        "Wissen und Standhaftigkeit sind zentrale Eigenschaften rechtschaffener Menschen",
-        "Auch wenn die Details gering sind, reicht Allahs Lob aus, um den Rang eines Dieners zu zeigen",
-        "Gehorsam und Geduld führen zur Erhöhung bei Allah"
+        "Knowledge and steadfastness are core traits of righteous individuals.",
+        "Even if details are scarce, Allah’s praise is enough to show someone's rank.",
+        "Obedience and patience lead to elevation in the sight of Allah."
       ]
     },
+
     "hud": {
       "name": "Hud",
-      "title": "Warner des Volkes Aad",
-      "era": "Volk Aad",
-      "summary": "Prophet Hud (Friede sei mit ihm) wurde zu dem mächtigen Volk Aad gesandt, das durch Stärke und prunkvolle Bauten bekannt war, aber in Hochmut und Götzendienst verfiel.",
+      "title": "Warner to the People of Aad",
+      "era": "People of Aad",
+      "summary": "Prophet Hud (peace be upon him) was sent to the mighty people of Aad, known for their strength and monumental architecture, but who fell into arrogance and idolatry.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Hud",
-            "text": "Das Volk Aad lebte in prunkvollen Häusern und war körperlich stark, doch ihr Herz war hart. Sie beteten Götzen an und prahlten mit ihrer Macht. Allah sandte ihnen Hud, damit er sie dazu aufruft, Allah allein zu dienen und Dankbarkeit zu zeigen. Sie verspotteten ihn und weigerten sich, ihre Arroganz aufzugeben. Hud warnte sie vor der kommenden Strafe, doch sie blieben stur. Schließlich sandte Allah einen zerstörerischen Wind, der sie über mehrere Tage hinweg auslöschte, während Hud und die wenigen Gläubigen gerettet wurden."
+            "title": "Chapter 1: The Story of Hud",
+            "text": "The people of Aad lived in luxurious dwellings and possessed great physical strength, yet their hearts were hard. They worshipped idols and boasted about their power. Allah sent Hud to call them to worship Allah alone and show gratitude. They mocked him and refused to abandon their arrogance. Hud warned them of impending punishment, but they remained stubborn. Eventually, Allah sent a violent wind that destroyed them over several days, while Hud and the believers were saved."
           }
         ]
       },
       "lessons": [
-        "Macht und Stärke ohne Glauben führen zur Vernichtung",
-        "Propheten warnen aus Barmherzigkeit, nicht aus persönlichem Gewinn",
-        "Hochmut gegenüber der Wahrheit zieht Allahs Strafe nach sich"
+        "Power and strength without faith lead to destruction.",
+        "Prophets warn out of compassion, not personal gain.",
+        "Arrogance toward the truth brings Allah’s punishment."
       ]
     },
+
     "salih": {
       "name": "Salih",
-      "title": "Warner des Volkes Thamud",
-      "era": "Volk Thamud",
-      "summary": "Prophet Salih (Friede sei mit ihm) wurde zum Volk Thamud gesandt, das in Felsenhäusern lebte und Allahs Zeichen ablehnte, obwohl Er ihnen ein klares Wunder zeigte.",
+      "title": "Warner to the People of Thamud",
+      "era": "People of Thamud",
+      "summary": "Prophet Salih (peace be upon him) was sent to the people of Thamud, who lived in carved stone dwellings and rejected Allah's clear sign.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Salih",
-            "text": "Das Volk Thamud war für seine in Felsen gehauenen Häuser und seinen Wohlstand bekannt. Sie waren dennoch undankbar und beteten andere als Allah an. Allah sandte Salih zu ihnen mit dem Aufruf, Ihn allein anzubeten. Sie verlangten ein Wunder, und Allah ließ aus einem Felsen eine besondere Kamelstute hervortreten, mit klaren Anweisungen, sie zu respektieren und ihr Wasserrecht nicht zu verletzen. Trotz dieses offensichtlichen Zeichens verletzten einige Anführer die Anweisung und töteten das Kamel. Salih warnte sie vor der Strafe, doch sie bereuten nicht. Daraufhin traf sie ein gewaltiger Schrei und ein Beben, das sie vernichtete."
+            "title": "Chapter 1: The Story of Salih",
+            "text": "The Thamud were known for their carved stone houses and prosperity. Despite their blessings, they were ungrateful and worshipped others besides Allah. Allah sent Salih to call them to monotheism. They demanded a miracle, so Allah brought forth a special she-camel from solid rock, with instructions to treat it respectfully and not violate its water rights. Despite this clear sign, some leaders killed the camel. Salih warned them of punishment, but they did not repent. A loud blast and earthquake destroyed them, while Salih and the believers were saved."
           }
         ]
       },
       "lessons": [
-        "Wunder allein reichen nicht, wenn das Herz sich weigert zu glauben",
-        "Allahs Zeichen müssen mit Respekt behandelt werden",
-        "Undankbarkeit gegenüber Allahs Gaben führt zum Verlust dieser Gaben"
+        "Miracles are useless if the heart refuses to believe.",
+        "Allah's signs must be treated with respect.",
+        "Ingratitude toward Allah's blessings leads to their loss."
       ]
     },
+
     "lut": {
       "name": "Lut",
-      "title": "Warner der verdorbenen Gesellschaft",
-      "era": "Volk von Sodom",
-      "summary": "Prophet Lut (Lot, Friede sei mit ihm) wurde zu einem Volk gesandt, das schwere moralische Verfehlungen beging und seine Warnungen verhöhnte.",
+      "title": "Warner to a Corrupt Society",
+      "era": "People of Sodom",
+      "summary": "Prophet Lut (Lot, peace be upon him) was sent to a people known for severe moral corruption, who mocked his warnings.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Lut",
-            "text": "Das Volk, zu dem Prophet Lut gesandt wurde, war in schwerwiegende Unmoral und Ungerechtigkeit verstrickt. Er rief sie zur Keuschheit, zur natürlichen Ordnung und zur Anbetung Allahs auf. Statt Reue zu zeigen, verspotteten sie ihn und drohten ihm. Als sie ihre Verdorbenheit noch weiter trieben und sich sogar den Gästen Luts nähern wollten, enthüllten diese Gäste sich als Engel. Sie befahlen Lut, mit den Gläubigen die Stadt bei Nacht zu verlassen. Kurz darauf zerstörte Allah die Stadt durch einen gewaltigen Umsturz und Steine aus gebranntem Ton."
+            "title": "Chapter 1: The Story of Lut",
+            "text": "The people to whom Prophet Lut was sent engaged in grave immorality and injustice. He called them to chastity, natural order, and worship of Allah. Instead of repenting, they mocked him and threatened him. When they tried to harm Lut’s angelic guests, the angels revealed themselves and told Lut to leave the town with the believers at night. Shortly after, Allah destroyed the city through a violent overturning and stones of baked clay."
           }
         ]
       },
       "lessons": [
-        "Moralische Verdorbenheit zerstört nicht nur Individuen, sondern ganze Gesellschaften",
-        "Allahs Geduld mit einem Volk ist groß, aber nicht grenzenlos",
-        "Rettung liegt im Festhalten an der Wahrheit, auch wenn man in der Minderheit ist"
+        "Moral corruption destroys individuals and entire societies.",
+        "Allah’s patience with a people is great, but not endless.",
+        "Salvation lies in clinging to the truth, even when one is in the minority."
       ]
     },
+
     "ismail": {
       "name": "Ismail",
-      "title": "Der gehorsame Sohn",
-      "era": "Frühes Arabien",
-      "summary": "Prophet Ismail (Ismael, Friede sei mit ihm) war der Sohn Ibrahims und ist bekannt für seinen Gehorsam gegenüber Allah und seiner Bereitschaft, sich einem schwierigen Befehl zu fügen.",
+      "title": "The Obedient Son",
+      "era": "Early Arabia",
+      "summary": "Prophet Ismail (Ishmael, peace be upon him) was the son of Ibrahim and is known for his obedience to Allah and willingness to accept difficult commands.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Ismail",
-            "text": "Ismail wuchs zunächst fern von seinem Vater in Mekka auf, wo Ibrahim seine Mutter Hadschar und ihn auf Allahs Befehl zurückgelassen hatte. Als Wasser knapp war, schenkte Allah ihnen die Quelle Zamzam. Später sah Ibrahim im Traum, dass er Ismail opfern sollte. Als er seinem Sohn davon erzählte, antwortete Ismail, dass er geduldig sein werde und dass sein Vater tun solle, was Allah befiehlt. Als beide sich dem Befehl unterwarfen, ersetzte Allah Ismail durch ein Opfertier und erhöhte sie beide für ihre Hingabe. Später half Ismail seinem Vater beim Bau der Ka'ba."
+            "title": "Chapter 1: The Story of Ismail",
+            "text": "Ismail grew up in Mecca, where Ibrahim left him and his mother Hajar by Allah’s command. When water was scarce, Allah gifted them the Zamzam spring. Later, Ibrahim saw in a dream that he must sacrifice Ismail. When he informed his son, Ismail told him to obey Allah and that he would be patient. As both submitted, Allah replaced Ismail with a sacrificial animal and elevated both for their devotion. Later, Ismail helped Ibrahim build the Ka'bah."
           }
         ]
       },
       "lessons": [
-        "Wahrer Gehorsam bedeutet, sich Allahs Willen zu unterwerfen, selbst wenn es schwer ist",
-        "Vertrauen zwischen Vater und Sohn kann auf gemeinsamem Glauben basieren",
-        "Allah ersetzt Opferbereitschaft mit Barmherzigkeit und Belohnung"
+        "True obedience means submitting to Allah even when it is difficult.",
+        "Trust between father and son can be built upon shared faith.",
+        "Allah replaces sacrifice with mercy and reward."
       ]
     },
+
     "ishaq": {
       "name": "Ishaq",
-      "title": "Der verheißene Sohn",
-      "era": "Nach Ibrahim",
-      "summary": "Prophet Ishaq (Isaak, Friede sei mit ihm) war ein Sohn Ibrahims, der ihm im hohen Alter als frohe Botschaft geschenkt wurde, und er setzte die Linie der Propheten fort.",
+      "title": "The Promised Son",
+      "era": "After Ibrahim",
+      "summary": "Prophet Ishaq (Isaac, peace be upon him) was given to Ibrahim and Sarah in old age as a glad tidings and continued the line of prophethood.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Ishaq",
-            "text": "Ishaq wurde Ibrahim und seiner Frau Sarah in einem Alter geschenkt, in dem sie menschlich gesehen keine Kinder mehr erwarteten. Allah verkündete ihre Schwangerschaft als frohe Botschaft. Ishaq wuchs in einem Haus des Glaubens auf und erbte das Prophetentum. Er lehrte sein Volk, Allah allein anzubeten und sich von Götzendienst fernzuhalten. Über ihn berichtet der Koran nur kurz, aber stets in einem ehrenvollen Kontext, zusammen mit anderen Propheten aus seiner Familie."
+            "title": "Chapter 1: The Story of Ishaq",
+            "text": "Ishaq was given to Ibrahim and Sarah at a time when they no longer expected children. His birth was announced as a glad tidings. Ishaq grew up in a home of faith and inherited prophethood. He taught his people to worship Allah and avoid idolatry. The Qur’an mentions him briefly but always with honor alongside his family of prophets."
           }
         ]
       },
       "lessons": [
-        "Allahs Versprechen erfüllen sich, auch wenn sie unmöglich erscheinen",
-        "Familien, die im Glauben gefestigt sind, können Generationen von Rechtschaffenheit hervorbringen",
-        "Wahre Ehre liegt in Nähe zu Allah, nicht nur in Abstammung"
+        "Allah’s promises come true even when they seem impossible.",
+        "Faithful families can produce generations of righteousness.",
+        "True honor lies in closeness to Allah, not merely in lineage."
       ]
     },
+
     "yaqub": {
       "name": "Yaqub",
-      "title": "Der geduldige Vater",
-      "era": "Nach Ishaq",
-      "summary": "Prophet Yaqub (Jakob, Friede sei mit ihm) war der Sohn Ishaqs und der Vater Yusufs. Er ist bekannt für seine Geduld, besonders angesichts des Verlusts seines geliebten Sohnes.",
+      "title": "The Patient Father",
+      "era": "After Ishaq",
+      "summary": "Prophet Yaqub (Jacob, peace be upon him) was the son of Ishaq and father of Yusuf. He is known for his patience, especially during the loss of his beloved son.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Yaqub",
-            "text": "Yaqub ermahnte seine Kinder, Allah allein zu dienen und Seinen Bund zu halten. Als seine Söhne Yusuf aus Eifersucht in einen Brunnen warfen und behaupteten, ein Wolf habe ihn gefressen, empfand Yaqub tiefen Schmerz, blieb aber standhaft im Vertrauen auf Allah. Er sagte, dass schöne Geduld sein Weg sei. Jahre später, als Yusuf in Ägypten eine hohe Stellung erlangte und seine Familie wieder zusammenführte, erkannte sich die Gnade Allahs. Yaqub blieb bis zum Ende seines Lebens dem Glauben treu und empfahl seinen Kindern auf dem Sterbebett, Allah allein zu dienen."
+            "title": "Chapter 1: The Story of Yaqub",
+            "text": "Yaqub instructed his children to worship Allah alone and uphold His covenant. When his sons threw Yusuf into a well and claimed a wolf had killed him, Yaqub felt deep sorrow but remained steadfast in his trust in Allah. He said that beautiful patience was his path. Years later, when Yusuf rose to a high position in Egypt and reunited the family, Yaqub recognized Allah’s grace. He remained faithful until his last moments and instructed his children to worship Allah alone."
           }
         ]
       },
       "lessons": [
-        "Geduld im Unglück ist ein Zeichen starken Glaubens",
-        "Elternliebe kann tief sein, doch Vertrauen auf Allah bleibt darüber",
-        "Familienprüfungen können letztlich zu größerer Nähe zu Allah führen"
+        "Patience in hardship is a sign of strong faith.",
+        "Parental love is deep, but trust in Allah stands above it.",
+        "Family trials can lead to greater closeness to Allah."
       ]
     },
+
     "shuayb": {
       "name": "Shuayb",
-      "title": "Der gerechte Warner von Madyan",
-      "era": "Volk von Madyan",
-      "summary": "Prophet Shuayb (Friede sei mit ihm) wurde zu den Leuten von Madyan gesandt, die im Handel betrügen und wirtschaftliche Ungerechtigkeit praktizierten.",
+      "title": "The Just Warner of Madyan",
+      "era": "People of Madyan",
+      "summary": "Prophet Shuayb (peace be upon him) was sent to the people of Madyan, who were known for cheating in trade and practicing economic injustice.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Shuayb",
-            "text": "Die Menschen von Madyan waren für betrügerische Handelspraktiken bekannt: Sie verkürzten Maße und Gewichte und unterdrückten die Schwachen. Allah sandte Shuayb zu ihnen, um sie vor Ungerechtigkeit zu warnen. Er rief sie dazu auf, ehrlich zu handeln, ihre Geschäfte zu reinigen und Allah allein anzubeten. Sie verspotteten ihn und drohten, ihn und seine Anhänger aus der Stadt zu vertreiben. Shuayb vertraute auf Allah und überließ das Urteil Ihm. Schließlich traf das Volk eine erdrückende Strafe, während Shuayb und die Gläubigen gerettet wurden."
+            "title": "Chapter 1: The Story of Shuayb",
+            "text": "The people of Madyan were known for fraudulent trade practices: they cheated in measurements, shortchanged buyers, and oppressed the weak. Allah sent Shuayb to warn them against injustice. He called them to honesty, fair trade, and worship of Allah. They mocked him and threatened to expel him and his followers. Shuayb trusted Allah and left their fate to Him. Ultimately, a crushing punishment struck the disbelievers, while Shuayb and the believers were saved."
           }
         ]
       },
       "lessons": [
-        "Gerechtigkeit und Ehrlichkeit im Handel sind ein wichtiger Teil des Glaubens",
-        "Wirtschaftliche Unterdrückung ist vor Allah schwerwiegend",
-        "Propheten rufen nicht nur zu Ritualen auf, sondern auch zu ethischem Verhalten im Alltag"
+        "Justice and honesty in trade are essential parts of faith.",
+        "Economic oppression is gravely condemned by Allah.",
+        "Prophets call not only to rituals but also to ethical daily behavior."
       ]
     },
+
     "ayyub": {
       "name": "Ayyub",
-      "title": "Das Vorbild der Geduld",
-      "era": "Antike Zeiten",
-      "summary": "Prophet Ayyub (Hiob, Friede sei mit ihm) ist ein Symbol für Geduld und Standhaftigkeit angesichts extremer Prüfungen von Gesundheit, Besitz und Familie.",
+      "title": "The Example of Patience",
+      "era": "Ancient Times",
+      "summary": "Prophet Ayyub (Job, peace be upon him) is a symbol of patience and steadfastness in the face of extreme trials involving health, wealth, and family.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Ayyub",
-            "text": "Ayyub war ein wohlhabender und dankbarer Diener Allahs. Um seine Aufrichtigkeit zu zeigen, wurde er mit schweren Prüfungen konfrontiert: Er verlor sein Vermögen, seine Kinder und schließlich seine Gesundheit. Trotz all dieser Verluste beklagte er sich nicht gegen Allah, sondern blieb im Herzen zufrieden mit Seinem Urteil. Er machte Bittgebete, in denen er seine Schwäche zugab, aber Allahs Barmherzigkeit lobte. Nachdem er die Prüfungen mit Geduld überstanden hatte, schenkte Allah ihm Heilung, erneuten Segen und Familie."
+            "title": "Chapter 1: The Story of Ayyub",
+            "text": "Ayyub was a wealthy and grateful servant of Allah. To demonstrate his sincerity, he was tested with severe trials: he lost his wealth, his children, and eventually his health. Despite all this, he never complained against Allah and remained content with His decree. He prayed humbly, acknowledging his weakness while praising Allah’s mercy. After enduring these trials with patience, Allah restored his health, blessed him with new family, and increased his provisions."
           }
         ]
       },
       "lessons": [
-        "Wahrer Glaube bleibt bestehen, auch wenn äußerer Segen verschwindet",
-        "Geduld in Prüfungen erhöht den Rang eines Menschen bei Allah",
-        "Beschwerde gegenüber Allah unterscheidet sich von ehrlicher Bitte um Hilfe"
+        "True faith remains firm even when worldly blessings disappear.",
+        "Patience in trials elevates a person’s rank with Allah.",
+        "Complaining to Allah is different from sincerely asking for His help."
       ]
     },
+
     "harun": {
       "name": "Harun",
-      "title": "Der unterstützende Bruder",
-      "era": "Zeit von Musa",
-      "summary": "Prophet Harun (Aaron, Friede sei mit ihm) war der Bruder Musas und wurde als Prophet gesandt, um ihn in seiner Mission beim Pharao zu unterstützen.",
+      "title": "The Supportive Brother",
+      "era": "Time of Musa",
+      "summary": "Prophet Harun (Aaron, peace be upon him) was the brother of Musa and was appointed as a prophet to support him in his mission to Pharaoh.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Harun",
-            "text": "Als Musa den Auftrag erhielt, zum Pharao zu gehen, bat er Allah darum, seinen Bruder Harun als Unterstützer zu senden, da Harun redegewandter war. Allah erfüllte diese Bitte, und Harun wurde ebenfalls Prophet. Gemeinsam traten sie vor den Pharao, riefen ihn zur Anbetung Allahs auf und präsentierten Zeichen. Harun unterstützte Musa auch bei der Führung der Kinder Israels. Als einige von ihnen später das goldene Kalb anbeteten, bemühte Harun sich, sie davon abzuhalten, bis Musa zurückkehrte."
+            "title": "Chapter 1: The Story of Harun",
+            "text": "When Musa received the command to confront Pharaoh, he asked Allah to send his brother Harun as a supporter, as Harun was more eloquent in speech. Allah granted this request. Together they faced Pharaoh, calling him to worship Allah and presenting miracles. Harun also helped Musa in guiding the Children of Israel. When some of them later worshipped the golden calf, Harun tried to stop them until Musa returned."
           }
         ]
       },
       "lessons": [
-        "Zusammenarbeit im Dienst an der Wahrheit ist ein großer Segen",
-        "Gute Kommunikation ist ein wichtiges Werkzeug in der Dawa",
-        "Geschwister können sich gegenseitig im Gehorsam gegenüber Allah stärken"
+        "Working together in service of truth is a great blessing.",
+        "Good communication skills are important in conveying the message.",
+        "Siblings can strengthen each other in obedience to Allah."
       ]
     },
+
     "dhulKifl": {
       "name": "Dhul-Kifl",
-      "title": "Der standhafte Gerechte",
-      "era": "Unbekannte Zeit",
-      "summary": "Dhul-Kifl (Friede sei mit ihm) wird im Koran als rechtschaffen und standhaft erwähnt, auch wenn nur wenige Details über sein Leben überliefert sind.",
+      "title": "The Steadfast Righteous Man",
+      "era": "Unknown Time",
+      "summary": "Dhul-Kifl (peace be upon him) is mentioned in the Qur’an as patient and righteous, though few details of his life are known.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Dhul-Kifl",
-            "text": "Über Dhul-Kifl sind nur wenige Informationen sicher bekannt. Der Koran erwähnt ihn in einer Reihe mit anderen Propheten und lobt seine Geduld und Rechtschaffenheit. Einige Gelehrte vermuten, dass er ein gerechter Mann oder Prophet war, der ein Volk führte und sein Versprechen hielt, trotz Schwierigkeiten gerecht zu bleiben. Sein Beispiel zeigt, dass Allah jene erwähnt, die in Geduld und Gerechtigkeit hervorstechen, selbst wenn ihre Biografie für uns verborgen bleibt."
+            "title": "Chapter 1: The Story of Dhul-Kifl",
+            "text": "Little is known with certainty about Dhul-Kifl. The Qur'an mentions him among other prophets and praises his patience and righteousness. Some scholars believe he was a prophet or a righteous man who led a people and upheld justice despite hardship. His example shows that Allah honors His righteous servants even if their biographies remain unknown to us."
           }
         ]
       },
       "lessons": [
-        "Nicht der Umfang der Geschichte ist wichtig, sondern die Aufrichtigkeit vor Allah",
-        "Geduld und das Einhalten von Versprechen sind zentrale Eigenschaften des Glaubens",
-        "Allah kennt und ehrt Seine rechtschaffenen Diener, auch wenn die Menschen sie vergessen"
+        "What matters is sincerity before Allah, not the length of one’s biography.",
+        "Patience and fulfilling promises are essential traits of faith.",
+        "Allah knows and honors His righteous servants even if people forget them."
       ]
     },
+
     "dawud": {
       "name": "Dawud",
-      "title": "Der gerechte Herrscher",
-      "era": "Antikes Israel",
-      "summary": "Prophet Dawud (David, Friede sei mit ihm) war Prophet und König, bekannt für seine schöne Rezitation, Weisheit im Urteil und seinen Dank gegenüber Allah.",
+      "title": "The Just Ruler",
+      "era": "Ancient Israel",
+      "summary": "Prophet Dawud (David, peace be upon him) was a prophet and king known for his beautiful recitation, wisdom in judgment, and gratitude to Allah.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Dawud",
-            "text": "Dawud wurde von Allah sowohl mit Prophetentum als auch mit Herrschaft gesegnet. Schon in jungen Jahren besiegte er Goliath, was zu seiner Bekanntheit führte. Allah gab ihm die Zabur (Psalmen) und eine wunderschöne Stimme, mit der er Allah pries; selbst Berge und Vögel stimmten mit ein. Als Herrscher war er gerecht und entschied Streitfälle mit Weisheit. Er führte ein Leben des Dankes, des Fastens und des Gebets, obwohl er große Verantwortung trug."
+            "title": "Chapter 1: The Story of Dawud",
+            "text": "Dawud was blessed by Allah with prophethood and kingship. As a young man, he defeated Goliath, which brought him great recognition. Allah gave him the Zabur (Psalms) and a beautiful voice with which he praised Allah; even mountains and birds sang along with him. As a ruler, he judged disputes with wisdom and justice. He lived a life of gratitude, fasting and praying frequently despite his responsibilities."
           }
         ]
       },
       "lessons": [
-        "Macht und Führung müssen mit Gerechtigkeit und Anbetung einhergehen",
-        "Schöne Rezitation und Gotteslob sind eine besondere Form der Nähe zu Allah",
-        "Auch erfolgreiche Menschen müssen demütig und Allah dankbar bleiben"
+        "Leadership and power must be balanced with justice and worship.",
+        "Reciting and praising Allah brings one closer to Him.",
+        "Even successful people must remain humble and grateful to Allah."
       ]
     },
+
     "ilyas": {
       "name": "Ilyas",
-      "title": "Der Warner vor dem Götzendienst",
-      "era": "Nach Dawud und Sulayman",
-      "summary": "Prophet Ilyas (Elija, Friede sei mit ihm) rief sein Volk dazu auf, den Götzen Baal zu verlassen und zu Allah allein zurückzukehren.",
+      "title": "The Warner Against Idolatry",
+      "era": "After Dawud and Sulayman",
+      "summary": "Prophet Ilyas (Elijah, peace be upon him) called his people to abandon the idol Baal and return to Allah.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Ilyas",
-            "text": "Ilyas wurde zu einem Volk gesandt, das den Götzen Baal anbetete. Er rief sie eindringlich dazu auf, Allah zu fürchten und den Götzendienst aufzugeben. Trotz seiner klaren Botschaft blieben viele trotzig. Der Koran erwähnt ihn als einen der Gesandten, die Allahs Botschaft überbrachten und zu Rechtschaffenheit aufriefen. Einige Überlieferungen deuten darauf hin, dass er schwere Ablehnung ertrug, dennoch blieb er standhaft im Ruf zur Wahrheit."
+            "title": "Chapter 1: The Story of Ilyas",
+            "text": "Ilyas was sent to a people who worshipped the idol Baal. He called them earnestly to fear Allah and abandon idolatry. Despite his clear message, many remained defiant. He is described as one of the messengers who delivered Allah’s message and called to righteousness. Some narrations mention that he faced great rejection yet remained steadfast."
           }
         ]
       },
       "lessons": [
-        "Götzendienst kann viele Formen annehmen, doch die Lösung ist immer Rückkehr zu Allah",
-        "Standhaftigkeit in einer feindlichen Umgebung ist ein Zeichen starken Glaubens",
-        "Propheten sind trotz Ablehnung geduldig in ihrer Einladung"
+        "Idolatry can take many forms, and the solution is always returning to Allah.",
+        "Standing firm in a hostile environment is a sign of strong faith.",
+        "Prophets remain patient in their call despite rejection."
       ]
     },
+
     "alyasa": {
       "name": "Al-Yasa",
-      "title": "Der fortführende Prophet",
-      "era": "Nach Ilyas",
-      "summary": "Prophet Al-Yasa (Elischa, Friede sei mit ihm) setzte die Arbeit anderer Propheten fort und rief sein Volk zur Anbetung Allahs und zu Rechtschaffenheit auf.",
+      "title": "The Continuing Prophet",
+      "era": "After Ilyas",
+      "summary": "Prophet Al-Yasa (Elisha, peace be upon him) continued the mission of earlier prophets, calling his people to worship Allah and righteousness.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Al-Yasa",
-            "text": "Al-Yasa wird im Koran kurz erwähnt, zusammen mit anderen rechtschaffenen Dienern Allahs. Er setzte die prophetische Mission nach Ilyas fort und rief die Menschen zur Rechtleitung. Auch wenn Details über sein Leben spärlich sind, wird er als einer der Auserwählten und Guten beschrieben. Seine Erwähnung zeigt die Kontinuität der prophetischen Botschaft durch die Geschichte."
+            "title": "Chapter 1: The Story of Al-Yasa",
+            "text": "Al-Yasa is briefly mentioned in the Qur’an alongside other righteous servants of Allah. He continued the prophetic mission after Ilyas and called people to guidance. Although details of his life are few, he is described as one of the chosen and good servants of Allah. His mention shows the continuity of the prophetic message."
           }
         ]
       },
       "lessons": [
-        "Die Arbeit für die Wahrheit wird von Generation zu Generation weitergetragen",
-        "Auch wenig bekannte Propheten spielten eine wichtige Rolle in Allahs Plan",
-        "Wichtig ist die Fortführung der Botschaft, nicht persönliche Berühmtheit"
+        "The work of truth is passed down through generations.",
+        "Less well-known prophets also played important roles in Allah’s plan.",
+        "What matters is continuing the message, not personal recognition."
       ]
     },
+
     "yunus": {
       "name": "Yunus",
-      "title": "Der Prophet des Walfischs",
-      "era": "Volk Ninive",
-      "summary": "Prophet Yunus (Jona, Friede sei mit ihm) ist bekannt für seine Geschichte im Bauch des Fisches und seine besondere Bittgebetformel.",
+      "title": "The Prophet of the Whale",
+      "era": "People of Nineveh",
+      "summary": "Prophet Yunus (Jonah, peace be upon him) is known for his story in the belly of the fish and his famous prayer.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Yunus",
-            "text": "Yunus wurde zu einem Volk gesandt, das seine Botschaft ablehnte. Aus Frustration verließ er sie, bevor Allah ihm die Erlaubnis dazu gegeben hatte. Er bestieg ein Schiff, das in einen Sturm geriet. Nachdem das Los auf ihn fiel, wurde er ins Meer geworfen und von einem großen Fisch verschlungen. Im Bauch des Fisches bereute er und sprach das bekannte Bittgebet: „Es gibt keinen Gott außer Dir. Gepriesen seist Du. Ich war wahrlich von den Ungerechten.“ Allah erhörte ihn, ließ ihn gerettet an Land werfen und gab ihm eine zweite Chance. Sein Volk bereute schließlich und wurde verschont."
+            "title": "Chapter 1: The Story of Yunus",
+            "text": "Yunus was sent to a people who rejected his message. Out of frustration, he left them without Allah’s permission. He boarded a ship that was caught in a storm. When the lot fell upon him, he was thrown into the sea and swallowed by a large fish. Inside the belly of the fish, he repented and recited the famous prayer: 'There is no deity except You. Glory be to You. Indeed, I was of the wrongdoers.' Allah accepted his repentance, had him cast ashore, and gave him another chance. His people eventually repented and were spared."
           }
         ]
       },
       "lessons": [
-        "Auch Propheten können Fehler machen, doch sie bereuen aufrichtig",
-        "Aufrichtige Reue und Dhikr können selbst in ausweglosen Situationen Rettung bringen",
-        "Die bekannte Dua von Yunus ist ein starkes Mittel in Zeiten der Bedrängnis"
+        "Even prophets can make mistakes, but they repent sincerely.",
+        "Sincere repentance and remembrance of Allah can save one from any hardship.",
+        "The supplication of Yunus is a powerful means of relief in distress."
       ]
     },
+
     "zakariya": {
       "name": "Zakariya",
-      "title": "Der Bittende im Alter",
-      "era": "Vor der Geburt Yahyas",
-      "summary": "Prophet Zakariya (Sacharja, Friede sei mit ihm) war ein frommer Diener Allahs, der im hohen Alter um einen rechtschaffenen Nachkommen bat.",
+      "title": "The Supplicant in Old Age",
+      "era": "Before the birth of Yahya",
+      "summary": "Prophet Zakariya (Zechariah, peace be upon him) was a pious servant of Allah who prayed for a righteous child despite his old age.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Zakariya",
-            "text": "Zakariya diente im Heiligtum und kümmerte sich um Maryam. Als er ihre besondere Versorgung sah, verstärkte dies seinen Glauben an Allahs Macht. Trotz seines hohen Alters und der Unfruchtbarkeit seiner Frau bat er Allah aufrichtig um einen Sohn, der das prophetische Erbe fortführen sollte. Allah erhörte sein Bittgebet und schenkte ihm Yahya als Kind. Zakariya wurde als geduldig, rechtschaffen und gehorsam beschrieben."
+            "title": "Chapter 1: The Story of Zakariya",
+            "text": "Zakariya served in the sanctuary and cared for Maryam. When he witnessed her receiving miraculous provision from Allah, his faith was strengthened. Despite his old age and his wife’s barrenness, he prayed sincerely for a son who would continue the legacy of prophethood. Allah accepted his request and granted him Yahya. Zakariya is described as patient, righteous, and obedient."
           }
         ]
       },
       "lessons": [
-        "Bittgebete haben keine Altersgrenze; Hoffnung auf Allah bleibt immer bestehen",
-        "Wer sich um Allahs Sache kümmert, erlebt oft besondere Zeichen",
-        "Rechtschaffene Nachkommen sind eine große Gnade und Verantwortung"
+        "Dua has no age limit; hope in Allah is always alive.",
+        "Those who serve Allah’s cause often witness special signs.",
+        "Righteous children are a great blessing and responsibility."
       ]
     },
+
     "yahya": {
       "name": "Yahya",
-      "title": "Der reine Prophet",
-      "era": "Zeit vor Isa",
-      "summary": "Prophet Yahya (Johannes der Täufer, Friede sei mit ihm) war der Sohn Zakariyas, bekannt für seine Reinheit, Askese und Furcht vor Allah.",
+      "title": "The Pure Prophet",
+      "era": "Before Isa",
+      "summary": "Prophet Yahya (John the Baptist, peace be upon him) was the son of Zakariya, known for his purity, asceticism, and fear of Allah.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Die Geschichte von Yahya",
-            "text": "Yahya wurde seinen Eltern als Wunder im hohen Alter geschenkt. Schon als Kind erhielt er Weisheit und war von Sünde ferngehalten. Er lebte einfach, mied Übermaß und erinnerte die Menschen ständig an die Furcht vor Allah. Der Koran beschreibt ihn als sanft, keusch und gottesfürchtig. Er rief zur Reue und zur Vorbereitung auf die kommende Botschaft Isa’s auf. Trotz seiner Rechtschaffenheit wurde er von tyrannischen Herrschern getötet."
+            "title": "Chapter 1: The Story of Yahya",
+            "text": "Yahya was granted to his parents as a miracle in old age. From childhood he received wisdom and was kept pure from sin. He lived simply, avoided excess, and constantly reminded people of the fear of Allah. The Qur’an describes him as gentle, chaste, and devout. He called people to repentance and prepared them for Isa’s coming. Despite his righteousness, he was killed by tyrannical rulers."
           }
         ]
       },
       "lessons": [
-        "Reinheit des Herzens und Einfachheit im Leben sind große Tugenden",
-        "Wahrheit zu sagen kann gefährlich sein, ist aber Pflicht der Propheten",
-        "Jugend kann ebenfalls ein Zeit intensiver Gottesfurcht sein"
+        "Purity of heart and simplicity in life are great virtues.",
+        "Speaking the truth may be dangerous but is the duty of prophets.",
+        "Youth can be a time of strong devotion to Allah."
       ]
     },
+
     "muhammad": {
       "name": "Muhammad",
-      "title": "Der letzte Prophet und das Siegel der Gesandten",
-      "era": "7. Jahrhundert n. Chr., Arabien",
-      "summary": "Prophet Muhammad (Friede sei mit ihm) ist der letzte Gesandte Allahs, der zur gesamten Menschheit gesandt wurde. Er erhielt den Koran über 23 Jahre und etablierte eine umfassende Lebensweise, die auf Gerechtigkeit, Barmherzigkeit und der Anbetung Allahs basiert.",
+      "title": "The Final Prophet and Seal of the Messengers",
+      "era": "7th Century CE, Arabia",
+      "summary": "Prophet Muhammad (peace be upon him) is the final messenger sent to all of humanity. He received the Qur’an over 23 years and established a comprehensive way of life based on justice, mercy, and devotion to Allah.",
       "story": {
         "chapters": [
           {
-            "title": "Kapitel 1: Geburt und frühes Leben",
-            "text": "Muhammad wurde 570 n. Chr. in Mekka im Jahr des Elefanten geboren. Sein Vater Abdullah starb vor seiner Geburt, seine Mutter Aminah während seiner Kindheit. Er wuchs im Haus seines Großvaters Abdulmuttalib und später seines Onkels Abu Talib auf. Schon früh war er für seine Ehrlichkeit, Zuverlässigkeit und Reinheit des Charakters bekannt und erhielt den Beinamen Al-Amin – der Vertrauenswürdige."
+            "title": "Chapter 1: Birth and Early Life",
+            "text": "Muhammad was born in 570 CE in Mecca, in the Year of the Elephant. His father Abdullah died before his birth, and his mother Aminah passed away during his childhood. He was raised by his grandfather Abdul Muttalib and later by his uncle Abu Talib. Even as a young man, he was known for honesty, reliability, and purity of character, earning the title Al-Amin — the Trustworthy."
           },
           {
-            "title": "Kapitel 2: Rückzug in die Höhle Hira und die erste Offenbarung",
-            "text": "Muhammad suchte regelmäßig die Einsamkeit in der Höhle Hira, um über das Leben und die Schöpfung zu reflektieren. Mit 40 Jahren erschien ihm der Engel Jibril mit der ersten Offenbarung: \"Lies im Namen deines Herrn\". Muhammad war erschüttert und kehrte zu seiner Frau Khadija zurück, die ihn beruhigte und ihn zu ihrem Onkel Waraqa ibn Nawfal brachte, der die Offenbarung bestätigte."
+            "title": "Chapter 2: Retreat to Cave Hira and the First Revelation",
+            "text": "Muhammad would often withdraw to the Cave of Hira to reflect on life and creation. At the age of 40, the angel Jibril appeared with the first revelation: 'Read in the name of your Lord.' Muhammad was shaken and returned to his wife Khadija, who comforted him and took him to her learned relative Waraqa ibn Nawfal, who confirmed the revelation."
           },
           {
-            "title": "Kapitel 3: Geheime und öffentliche Verkündigung",
-            "text": "Die ersten drei Jahre rief Muhammad nur im kleinen Kreis zur Anbetung Allahs auf. Dann begann die öffentliche Verkündigung. Er rief die Mekkaner dazu auf, ihren Götzendienst aufzugeben, Gerechtigkeit zu üben, die Armen zu unterstützen und Allah allein anzubeten. Die Anführer der Quraisch sahen ihre Macht bedroht und reagierten mit Spott, Ablehnung und Feindseligkeit."
+            "title": "Chapter 3: Private and Public Preaching",
+            "text": "For the first three years, Muhammad preached only to a close circle. Then he began to call publicly. He invited the people of Mecca to abandon idolatry, practice justice, support the poor, and worship Allah alone. The leaders of Quraysh felt threatened and responded with mockery, rejection, and hostility."
           },
           {
-            "title": "Kapitel 4: Verfolgung und Boykott",
-            "text": "Die Muslime wurden gefoltert, verspottet und wirtschaftlich isoliert. Die Quraisch verhängten einen totalen Boykott gegen den Propheten und seinen Clan. Trotz schwerer Entbehrungen blieb Muhammad standhaft. Während dieser Zeit starben seine Frau Khadija und sein Onkel Abu Talib – ein Jahr, das als das Jahr der Trauer bekannt ist."
+            "title": "Chapter 4: Persecution and Boycott",
+            "text": "The Muslims were mocked, tortured, and socially and economically isolated. Quraysh imposed a complete boycott on the Prophet and his clan. Despite severe hardships, Muhammad remained steadfast. During this period, his wife Khadija and his uncle Abu Talib passed away — a time known as the Year of Sorrow."
           },
           {
-            "title": "Kapitel 5: Die Hidschra nach Medina",
-            "text": "Angesichts der zunehmenden Gefahr erlaubte Allah den Muslimen, nach Medina auszuwandern. Muhammad folgte ihnen 622 n. Chr., was den Beginn des islamischen Kalenders markiert. In Medina wurde er spiritueller, politischer und sozialer Führer und vereinte konkurrierende Stämme in einer Gemeinschaft basierend auf Glauben, Gerechtigkeit und Brüderlichkeit."
+            "title": "Chapter 5: The Migration to Medina",
+            "text": "As danger increased, Allah permitted the Muslims to migrate to Medina. Muhammad joined them in 622 CE, marking the beginning of the Islamic calendar. In Medina, he became spiritual, political, and social leader, uniting rival tribes into a community based on faith, justice, and brotherhood."
           },
           {
-            "title": "Kapitel 6: Aufbau des islamischen Gemeinwesens",
-            "text": "Muhammad baute die erste Moschee, setzte verbindliche soziale Regeln durch, etablierte Rechte für Frauen, Waisen und Bedürftige und schuf ein System der gegenseitigen Unterstützung. Er schloss Verträge mit jüdischen Stämmen und legte die Grundlagen eines friedlichen, kooperativen Zusammenlebens."
+            "title": "Chapter 6: Establishment of the Islamic Community",
+            "text": "Muhammad built the first mosque, established social laws, created rights for women, orphans, and the poor, and implemented systems of mutual support. He formed treaties with Jewish tribes and set the foundations for peaceful coexistence."
           },
           {
-            "title": "Kapitel 7: Verteidigung und Schlachten",
-            "text": "Die muslimische Gemeinschaft wurde mehrfach angegriffen. Es kam zu bekannten Schlachten wie Badr, Uhud und dem Grabenkrieg. Muhammad führte die Gläubigen, suchte jedoch stets den Frieden und verbot Ungerechtigkeit, Folter und Brutalität – selbst gegenüber Feinden. Militärische Auseinandersetzungen dienten ausschließlich der Verteidigung."
+            "title": "Chapter 7: Battles and Defense",
+            "text": "The Muslims were repeatedly attacked, leading to battles such as Badr, Uhud, and the Battle of the Trench. Muhammad led the believers but always sought peace and prohibited injustice, torture, and brutality — even against enemies. The wars were strictly defensive."
           },
           {
-            "title": "Kapitel 8: Die Eroberung Mekkas",
-            "text": "Nach jahrelangen Spannungen zog Muhammad mit einer großen muslimischen Gemeinschaft nach Mekka. Die Stadt ergab sich kampflos. Der Prophet vergab seinen früheren Feinden großmütig und sagte: \"Geht, ihr seid frei\". Er zerstörte die Götzen in der Kaaba und stellte die reine Anbetung Allahs wieder her."
+            "title": "Chapter 8: The Conquest of Mecca",
+            "text": "After years of tension, Muhammad marched toward Mecca with a large Muslim community. The city surrendered peacefully. The Prophet forgave his former enemies, saying, 'Go, you are free.' He removed the idols from the Ka'bah and restored the worship of Allah alone."
           },
           {
-            "title": "Kapitel 9: Die Abschiedspilgerfahrt",
-            "text": "632 n. Chr. führte Muhammad seine letzte Pilgerfahrt durch. In der Abschiedspredigt betonte er Gleichheit aller Menschen, das Verbot von Unterdrückung, die Heiligkeit von Leben und Eigentum sowie die Verantwortung gegenüber Frauen. Er erklärte, dass die Religion nun vervollkommnet worden sei."
+            "title": "Chapter 9: The Farewell Pilgrimage",
+            "text": "In 632 CE, Muhammad performed his final pilgrimage. In his farewell sermon, he emphasized human equality, the prohibition of oppression, the sanctity of life and property, and responsibility toward women. He declared that the religion had been completed."
           },
           {
-            "title": "Kapitel 10: Tod und Vermächtnis",
-            "text": "Kurz nach der Pilgerfahrt erkrankte Muhammad und verstarb im Haus seiner Frau Aisha. Sein Vermächtnis – der Koran und die Sunna – bildet bis heute die Grundlage des spirituellen, moralischen und gesellschaftlichen Lebens von Millionen Menschen. Seine Lehren markieren einen Wendepunkt in der Weltgeschichte und beeinflussen Ethik, Recht, Kultur und zwischenmenschliche Beziehungen bis heute."
+            "title": "Chapter 10: Death and Legacy",
+            "text": "Shortly after the pilgrimage, Muhammad fell ill and passed away in the home of his wife Aisha. His legacy — the Qur’an and the Sunnah — remains the foundation of the spiritual, moral, and social lives of millions. His teachings shaped world history and continue to influence ethics, law, and human relations."
           }
         ]
       },
       "lessons": [
-        "Das Leben des Propheten ist ein vollständiges Vorbild für alle Bereiche des Lebens.",
-        "Geduld und Beständigkeit sind entscheidend für Veränderung.",
-        "Gerechtigkeit, Barmherzigkeit und Mitgefühl müssen jede Handlung prägen.",
-        "Der Koran und die Sunna bieten umfassende Orientierung für ein erfolgreiches Leben im Diesseits und im Jenseits."
+        "The life of the Prophet is a complete example for all areas of life.",
+        "Patience and perseverance are essential for positive change.",
+        "Justice, mercy, and compassion must shape all actions.",
+        "The Qur’an and Sunnah offer guidance for success in this life and the next."
       ]
     }
   }
