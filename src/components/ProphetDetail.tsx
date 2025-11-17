@@ -22,6 +22,17 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
   const story = t(prophet.storyKey, { returnObjects: true }) as { chapters?: Array<{ title: string; text: string }> };
   const chapters = story?.chapters || [];
 
+  // Update document title
+  useEffect(() => {
+    const prophetName = t(prophet.nameKey);
+    const siteTitle = t('siteTitle');
+    document.title = `${prophetName} - ${siteTitle}`;
+
+    return () => {
+      document.title = t('siteTitle');
+    };
+  }, [prophet.nameKey, t]);
+
   useEffect(() => {
     const allRefs = [summaryRef.current, ...chapterRefs.current, lessonsRef.current].filter(Boolean);
     if (allRefs.length === 0) return;
