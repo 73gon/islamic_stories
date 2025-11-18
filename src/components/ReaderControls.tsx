@@ -14,37 +14,33 @@ export function ReaderControls() {
         {focusMode ? <BookOpenCheck className='h-4 w-4' /> : <BookOpen className='h-4 w-4' />}
       </Button>
 
-      {!focusMode && (
-        <>
-          <Separator orientation='vertical' className='h-6' />
+      <Separator orientation='vertical' className='h-6' />
 
-          {/* Font Size Controls */}
-          <ToggleGroup type='single' value={fontSize} onValueChange={(value) => value && setFontSize(value as 'small' | 'medium' | 'large')} variant={'outline'}>
-            <ToggleGroupItem value='small' aria-label='Small font' className='h-8 w-8 p-0'>
-              <span className='text-xs font-semibold'>A</span>
-            </ToggleGroupItem>
-            <ToggleGroupItem value='medium' aria-label='Medium font' className='h-8 w-8 p-0'>
-              <span className='text-sm font-semibold'>A</span>
-            </ToggleGroupItem>
-            <ToggleGroupItem value='large' aria-label='Large font' className='h-8 w-8 p-0'>
-              <span className='text-base font-semibold'>A</span>
-            </ToggleGroupItem>
-          </ToggleGroup>
+      {/* Font Size Controls */}
+      <ToggleGroup type='single' value={fontSize} onValueChange={(value) => value && setFontSize(value as 'small' | 'medium' | 'large')} variant={'outline'}>
+        <ToggleGroupItem value='small' aria-label='Small font' className='h-8 w-8 p-0'>
+          <span className='text-xs font-semibold'>A</span>
+        </ToggleGroupItem>
+        <ToggleGroupItem value='medium' aria-label='Medium font' className='h-8 w-8 p-0'>
+          <span className='text-sm font-semibold'>A</span>
+        </ToggleGroupItem>
+        <ToggleGroupItem value='large' aria-label='Large font' className='h-8 w-8 p-0'>
+          <span className='text-base font-semibold'>A</span>
+        </ToggleGroupItem>
+      </ToggleGroup>
 
-          <Separator orientation='vertical' className='h-6' />
+      <Separator orientation='vertical' className='h-6' />
 
-          {/* Serif/Sans Toggle */}
-          <Button
-            variant={fontFamily === 'serif' ? 'default' : 'outline'}
-            size='sm'
-            onClick={() => setFontFamily(fontFamily === 'sans' ? 'serif' : 'sans')}
-            className='gap-1 h-8 px-3'
-            aria-label='Toggle font family'
-          >
-            <span className='text-xs'>{fontFamily === 'serif' ? 'Serif' : 'Sans'}</span>
-          </Button>
-        </>
-      )}
+      {/* Serif/Sans Toggle */}
+      <Button
+        variant={fontFamily === 'serif' ? 'default' : 'outline'}
+        size='sm'
+        onClick={() => setFontFamily(fontFamily === 'sans' ? 'serif' : 'sans')}
+        className='gap-1 h-8 px-3'
+        aria-label='Toggle font family'
+      >
+        <span className='text-xs'>{fontFamily === 'serif' ? 'Serif' : 'Sans'}</span>
+      </Button>
     </div>
   );
 }

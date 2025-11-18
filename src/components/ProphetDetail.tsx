@@ -1,71 +1,80 @@
-import { useTranslation } from 'react-i18next';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
-import { Link } from '@tanstack/react-router';
-import { Separator } from '@/components/ui/separator';
-import type { ProphetStory } from '@/types/prophet';
-import { useState, useEffect, useRef } from 'react';
-import ReactMarkdown from 'react-markdown';
-import { useReaderStore } from '@/store/readerStore';
-import { ReaderControls } from './ReaderControls';
+import { useTranslation } from 'react-i18next'
+import { motion, AnimatePresence } from 'framer-motion'
+import { ArrowLeft } from 'lucide-react'
+import { Link } from '@tanstack/react-router'
+import { Separator } from '@/components/ui/separator'
+import type { ProphetStory } from '@/types/prophet'
+import { useState, useEffect, useRef } from 'react'
+import ReactMarkdown from 'react-markdown'
+import { useReaderStore } from '@/store/readerStore'
 
 interface ProphetDetailProps {
-  prophet: ProphetStory;
+  prophet: ProphetStory
 }
 
 export function ProphetDetail({ prophet }: ProphetDetailProps) {
-  const { t } = useTranslation();
-  const { focusMode, fontSize, fontFamily } = useReaderStore();
-  const [activeChapter, setActiveChapter] = useState(0);
-  const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const summaryRef = useRef<HTMLElement | null>(null);
-  const lessonsRef = useRef<HTMLElement | null>(null);
-  const isScrollingRef = useRef(false);
+  const { t } = useTranslation()
+  const { focusMode, fontSize, fontFamily } = useReaderStore()
+  const [activeChapter, setActiveChapter] = useState(0)
+  const chapterRefs = useRef<(HTMLDivElement | null)[]>([])
+  const summaryRef = useRef<HTMLElement | null>(null)
+  const lessonsRef = useRef<HTMLElement | null>(null)
+  const isScrollingRef = useRef(false)
 
-  const story = t(prophet.storyKey, { returnObjects: true }) as { chapters?: Array<{ title: string; text: string }> };
-  const chapters = story?.chapters || [];
+  const story = t(prophet.storyKey, { returnObjects: true }) as {
+    chapters?: Array<{ title: string; text: string }>
+  }
+  const chapters = story?.chapters || []
 
   // Scroll to top when prophet changes
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [prophet.id]);
+    window.scrollTo(0, 0)
+  }, [prophet.id])
 
   // Update document title
   useEffect(() => {
-    const prophetName = t(prophet.nameKey);
-    const siteTitle = t('siteTitle');
-    document.title = `${prophetName} - ${siteTitle}`;
+    const prophetName = t(prophet.nameKey)
+    const siteTitle = t('siteTitle')
+    document.title = `${prophetName} - ${siteTitle}`
 
     return () => {
-      document.title = t('siteTitle');
-    };
-  }, [prophet.nameKey, t]);
+      document.title = t('siteTitle')
+    }
+  }, [prophet.nameKey, t])
 
   useEffect(() => {
-    const allRefs = [summaryRef.current, ...chapterRefs.current, lessonsRef.current].filter(Boolean);
-    if (allRefs.length === 0) return;
+    const allRefs = [
+      summaryRef.current,
+      ...chapterRefs.current,
+      lessonsRef.current,
+    ].filter(Boolean)
+    if (allRefs.length === 0) return
 
     const observer = new IntersectionObserver(
       (entries) => {
         // Skip if we're in the middle of a manual scroll
-        if (isScrollingRef.current) return;
+        if (isScrollingRef.current) return
 
         // Find the entry that is most intersecting
-        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+        const visibleEntries = entries.filter((entry) => entry.isIntersecting)
         if (visibleEntries.length > 0) {
           // Get the one that's closest to the top
           const topMostEntry = visibleEntries.reduce((prev, current) => {
-            return current.boundingClientRect.top < prev.boundingClientRect.top ? current : prev;
-          });
+            return current.boundingClientRect.top < prev.boundingClientRect.top
+              ? current
+              : prev
+          })
 
           if (topMostEntry.target === summaryRef.current) {
-            setActiveChapter(-1);
+            setActiveChapter(-1)
           } else if (topMostEntry.target === lessonsRef.current) {
-            setActiveChapter(chapters.length);
+            setActiveChapter(chapters.length)
           } else {
-            const index = chapterRefs.current.findIndex((ref) => ref === topMostEntry.target);
+            const index = chapterRefs.current.findIndex(
+              (ref) => ref === topMostEntry.target,
+            )
             if (index !== -1) {
-              setActiveChapter(index);
+              setActiveChapter(index)
             }
           }
         }
@@ -74,115 +83,135 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
         rootMargin: '-20% 0px -70% 0px',
         threshold: [0, 0.25, 0.5, 0.75, 1],
       },
-    );
+    )
 
     allRefs.forEach((ref) => {
       if (ref) {
-        observer.observe(ref);
+        observer.observe(ref)
       }
-    });
+    })
 
     return () => {
-      observer.disconnect();
-    };
-  }, [chapters.length]);
+      observer.disconnect()
+    }
+  }, [chapters.length])
 
   const scrollToChapter = (index: number) => {
-    let element: HTMLElement | null = null;
+    let element: HTMLElement | null = null
 
-    if (index === -1) {
-      element = summaryRef.current;
-    } else if (index === chapters.length) {
-      element = lessonsRef.current;
-    } else {
-      element = chapterRefs.current[index];
-    }
+    if (index === -1) element = summaryRef.current
+    else if (index === chapters.length) element = lessonsRef.current
+    else element = chapterRefs.current[index]
 
     if (element) {
       // Set the active chapter immediately
-      setActiveChapter(index);
+      setActiveChapter(index)
 
       // Disable observer during manual scroll
-      isScrollingRef.current = true;
+      isScrollingRef.current = true
 
-      const yOffset = -100; // Offset to account for any fixed headers or spacing
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      const yOffset = -100 // Offset to account for any fixed headers or spacing
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset
+      window.scrollTo({ top: y, behavior: 'smooth' })
 
       // Re-enable observer after scroll completes
       setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1000);
+        isScrollingRef.current = false
+      }, 1000)
     }
-  };
+  }
 
   return (
-    <div className='relative w-full'>
-      <div className='flex justify-center'>
+    <div className="relative w-full">
+      <div className="flex justify-center">
         <motion.article
+          initial={{ maxWidth: focusMode ? '56rem' : '48rem' }}
           animate={{ maxWidth: focusMode ? '56rem' : '48rem' }}
+          transition={{ duration: 0.3 }}
           className={`w-full px-4 sm:px-6 py-8 sm:py-12 ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} ${fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'}`}
         >
           {/* Main Content - Centered */}
-          {/* Back Link and Focus Button Row */}
-          <div className='flex items-center justify-between mb-8'>
-            <Link to='/' className='inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors'>
-              <ArrowLeft className='h-4 w-4' />
+          {/* Back Link */}
+          <div className="flex items-center justify-between mb-8">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
               {t('prophetDetail.backToList')}
             </Link>
-
-            <AnimatePresence>
-              {focusMode && (
-                <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} transition={{ duration: 0.3 }}>
-                  <ReaderControls />
-                </motion.div>
-              )}
-            </AnimatePresence>
           </div>
 
           {/* Title Block */}
-          <header className='space-y-3 mb-12'>
-            <div className='flex items-baseline justify-between gap-3'>
-              <h1 className='text-3xl sm:text-4xl font-bold text-foreground'>
+          <header className="space-y-3 mb-12">
+            <div className="flex items-baseline justify-between gap-3">
+              <h1 className="text-3xl sm:text-4xl font-bold text-foreground">
                 {t(prophet.nameKey)}
-                {prophet.id === 'muhammad' && <span className='text-2xl sm:text-3xl ml-2'>ﷺ</span>}
+                {prophet.id === 'muhammad' && (
+                  <span className="text-2xl sm:text-3xl ml-2">ﷺ</span>
+                )}
               </h1>
-              {prophet.arabicName && <span className='text-2xl sm:text-3xl text-muted-foreground font-arabic'>{prophet.arabicName}</span>}
+              {prophet.arabicName && (
+                <span className="text-2xl sm:text-3xl text-muted-foreground font-arabic">
+                  {prophet.arabicName}
+                </span>
+              )}
             </div>
-            <div className='flex items-center justify-between gap-4'>
-              {prophet.titleKey && <p className='text-lg sm:text-xl text-muted-foreground'>{t(prophet.titleKey)}</p>}
-              {prophet.eraKey && <p className='text-sm text-muted-foreground whitespace-nowrap'>{t(prophet.eraKey)}</p>}
+            <div className="flex items-center justify-between gap-4">
+              {prophet.titleKey && (
+                <p className="text-lg sm:text-xl text-muted-foreground">
+                  {t(prophet.titleKey)}
+                </p>
+              )}
+              {prophet.eraKey && (
+                <p className="text-sm text-muted-foreground whitespace-nowrap">
+                  {t(prophet.eraKey)}
+                </p>
+              )}
             </div>
           </header>
 
-          <Separator className='my-8' />
+          <Separator className="my-8" />
 
           {/* Summary Section */}
-          <section ref={summaryRef} className='space-y-4 mb-12'>
-            <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.summary')}</h2>
-            <div className='text-base text-foreground/90 leading-relaxed'>
+          <section ref={summaryRef} className="space-y-4 mb-12">
+            <h2 className="text-xl font-semibold text-foreground mt-2 mb-3">
+              {t('prophetDetail.summary')}
+            </h2>
+            <div className="text-base text-foreground/90 leading-relaxed">
               <ReactMarkdown>{t(prophet.summaryKey)}</ReactMarkdown>
             </div>
           </section>
 
-          <Separator className='my-8' />
+          <Separator className="my-8" />
 
           {/* Story Section with Chapters */}
-          <section className='space-y-6 mb-12'>
-            <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.story')}</h2>
-            <div className='space-y-8'>
+          <section className="space-y-6 mb-12">
+            <h2 className="text-xl font-semibold text-foreground mt-2 mb-3">
+              {t('prophetDetail.story')}
+            </h2>
+            <div className="space-y-8">
               {chapters.map((chapter, index) => (
                 <div
                   key={index}
                   ref={(el) => {
-                    chapterRefs.current[index] = el;
+                    chapterRefs.current[index] = el
                   }}
-                  className='space-y-3'
+                  className="space-y-3"
                 >
-                  <h3 className={`font-semibold text-foreground ${fontSize === 'small' ? 'text-base' : fontSize === 'large' ? 'text-xl' : 'text-lg'}`}>{chapter.title}</h3>
+                  <h3
+                    className={`font-semibold text-foreground ${fontSize === 'small' ? 'text-base' : fontSize === 'large' ? 'text-xl' : 'text-lg'}`}
+                  >
+                    {chapter.title}
+                  </h3>
                   <div
                     className={`text-foreground/90 leading-relaxed text-justify hyphens-auto ${
-                      fontSize === 'small' ? 'text-sm leading-7' : fontSize === 'large' ? 'text-lg leading-9' : 'text-base leading-8'
+                      fontSize === 'small'
+                        ? 'text-sm leading-7'
+                        : fontSize === 'large'
+                          ? 'text-lg leading-9'
+                          : 'text-base leading-8'
                     }`}
                   >
                     <ReactMarkdown>{chapter.text}</ReactMarkdown>
@@ -195,14 +224,18 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
           {/* Lessons Section */}
           {prophet.lessonsKeys.length > 0 && (
             <>
-              <Separator className='my-8' />
-              <section ref={lessonsRef} className='space-y-4 mb-12'>
-                <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.lessons')}</h2>
-                <ul className='space-y-3'>
+              <Separator className="my-8" />
+              <section ref={lessonsRef} className="space-y-4 mb-12">
+                <h2 className="text-xl font-semibold text-foreground mt-2 mb-3">
+                  {t('prophetDetail.lessons')}
+                </h2>
+                <ul className="space-y-3">
                   {prophet.lessonsKeys.map((lessonKey, index) => (
-                    <li key={index} className='flex gap-3'>
-                      <span className='text-primary font-bold mt-0.5 shrink-0'>•</span>
-                      <div className='text-base text-foreground/90 leading-relaxed'>
+                    <li key={index} className="flex gap-3">
+                      <span className="text-primary font-bold mt-0.5 shrink-0">
+                        •
+                      </span>
+                      <div className="text-base text-foreground/90 leading-relaxed">
                         <ReactMarkdown>{t(lessonKey)}</ReactMarkdown>
                       </div>
                     </li>
@@ -215,12 +248,17 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
           {/* Quran References Section */}
           {prophet.quranRefs.length > 0 && (
             <>
-              <Separator className='my-8' />
-              <section className='space-y-4 mb-12'>
-                <h2 className='text-xl font-semibold text-foreground mt-2 mb-3'>{t('prophetDetail.quranReferences')}</h2>
-                <div className='flex flex-wrap gap-2'>
+              <Separator className="my-8" />
+              <section className="space-y-4 mb-12">
+                <h2 className="text-xl font-semibold text-foreground mt-2 mb-3">
+                  {t('prophetDetail.quranReferences')}
+                </h2>
+                <div className="flex flex-wrap gap-2">
                   {prophet.quranRefs.map((ref, index) => (
-                    <span key={index} className='inline-flex items-center px-3 py-1.5 text-sm font-medium bg-muted text-foreground rounded-full'>
+                    <span
+                      key={index}
+                      className="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-muted text-foreground rounded-full"
+                    >
                       {ref.surah}:{ref.ayat}
                     </span>
                   ))}
@@ -238,24 +276,23 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.3 }}
-              className='hidden lg:block w-64 shrink-0 py-8 sm:py-12 pl-8'
+              className="hidden lg:block w-64 shrink-0 py-8 sm:py-12 pl-8"
             >
-              <div className='sticky top-20 mb-8'>
-                <ReaderControls />
-              </div>
-              <div className='sticky top-1/2 -translate-y-1/2'>
-                <nav className='space-y-1'>
+              <div className="sticky top-1/2 -translate-y-1/2">
+                <nav className="space-y-1">
                   {/* Summary Link */}
                   <div>
                     <button
                       onClick={() => scrollToChapter(-1)}
                       className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                        activeChapter === -1 ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                        activeChapter === -1
+                          ? 'text-primary font-medium bg-primary/10'
+                          : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                       }`}
                     >
                       {t('prophetDetail.summary')}
                     </button>
-                    <Separator className='my-1' />
+                    <Separator className="my-1" />
                   </div>
 
                   {/* Chapter Links */}
@@ -264,12 +301,17 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                       <button
                         onClick={() => scrollToChapter(index)}
                         className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                          activeChapter === index ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                          activeChapter === index
+                            ? 'text-primary font-medium bg-primary/10'
+                            : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                         }`}
                       >
                         {chapter.title}
                       </button>
-                      {(index < chapters.length - 1 || prophet.lessonsKeys.length > 0) && <Separator className='my-1' />}
+                      {(index < chapters.length - 1 ||
+                        prophet.lessonsKeys.length > 0) && (
+                        <Separator className="my-1" />
+                      )}
                     </div>
                   ))}
 
@@ -279,7 +321,9 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                       <button
                         onClick={() => scrollToChapter(chapters.length)}
                         className={`w-full text-left px-2 py-2 text-sm rounded-md transition-all ${
-                          activeChapter === chapters.length ? 'text-primary font-medium bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                          activeChapter === chapters.length
+                            ? 'text-primary font-medium bg-primary/10'
+                            : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                         }`}
                       >
                         {t('prophetDetail.lessons')}
@@ -293,5 +337,5 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
         </AnimatePresence>
       </div>
     </div>
-  );
+  )
 }

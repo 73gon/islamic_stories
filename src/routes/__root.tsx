@@ -4,6 +4,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import { Header } from '@/components/Header'
 import { Toaster } from '@/components/ui/sonner'
+import { Footer } from '@/components/Footer'
 
 export const Route = createRootRoute({
   component: () => (
@@ -11,6 +12,7 @@ export const Route = createRootRoute({
       <Header />
       <Outlet />
       <Toaster />
+      <Footer />
       <TanStackDevtools
         config={{
           position: 'bottom-right',
