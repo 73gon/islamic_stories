@@ -179,7 +179,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
             <h2 className="text-xl font-semibold text-foreground mt-2 mb-3">
               {t('prophetDetail.summary')}
             </h2>
-            <div className="text-base text-foreground/90 leading-relaxed">
+            <div className="text-base text-foreground/90 leading-relaxed text-justify hyphens-auto">
               <ReactMarkdown>{t(prophet.summaryKey)}</ReactMarkdown>
             </div>
           </section>
