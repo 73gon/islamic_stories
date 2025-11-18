@@ -65,7 +65,11 @@ export function Header() {
                   >
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
-                        <Button variant="outline" size="sm" className="h-9 w-9 p-0">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="h-9 w-9 p-0"
+                        >
                           <Settings2 className="h-4 w-4" />
                           <span className="sr-only">Reader settings</span>
                         </Button>
