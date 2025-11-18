@@ -1,16 +1,16 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { ThemeProvider } from 'next-themes';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { ThemeProvider } from 'next-themes'
+import { RouterProvider } from '@tanstack/react-router'
+import { router } from '@/router'
 
-import App from './App.tsx';
+import '@/lib/i18n'
+import '@/index.css'
 
-import './lib/i18n';
-import './index.css';
-
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('app')!).render(
   <StrictMode>
-    <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-      <App />
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <RouterProvider router={router} />
     </ThemeProvider>
   </StrictMode>,
-);
+)

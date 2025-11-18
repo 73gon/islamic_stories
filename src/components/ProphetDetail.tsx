@@ -121,7 +121,6 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
       <div className='flex justify-center'>
         <motion.article
           animate={{ maxWidth: focusMode ? '56rem' : '48rem' }}
-          transition={{ duration: 0.5 }}
           className={`w-full px-4 sm:px-6 py-8 sm:py-12 ${fontFamily === 'serif' ? 'font-serif' : 'font-sans'} ${fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'}`}
         >
           {/* Main Content - Centered */}
@@ -202,7 +201,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
                 <ul className='space-y-3'>
                   {prophet.lessonsKeys.map((lessonKey, index) => (
                     <li key={index} className='flex gap-3'>
-                      <span className='text-primary font-bold mt-0.5 flex-shrink-0'>•</span>
+                      <span className='text-primary font-bold mt-0.5 shrink-0'>•</span>
                       <div className='text-base text-foreground/90 leading-relaxed'>
                         <ReactMarkdown>{t(lessonKey)}</ReactMarkdown>
                       </div>
@@ -239,7 +238,7 @@ export function ProphetDetail({ prophet }: ProphetDetailProps) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.3 }}
-              className='hidden lg:block w-64 flex-shrink-0 py-8 sm:py-12 pl-8'
+              className='hidden lg:block w-64 shrink-0 py-8 sm:py-12 pl-8'
             >
               <div className='sticky top-20 mb-8'>
                 <ReaderControls />
