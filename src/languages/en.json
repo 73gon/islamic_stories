@@ -1,5 +1,7 @@
 {
   "siteTitle": "Prophet Stories",
+  "bismillah": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+  "bismillahTranslation": "In the Name of Allah, the Most Gracious, the Most Merciful",
   "homepage": {
     "title": "Stories of the Prophets",
     "subtitle": "Discover the lives and teachings of the Messengers of Allah",
@@ -233,7 +235,11 @@
           }
         ]
       },
-      "lessons": ["Power and strength without faith lead to destruction.", "Prophets warn out of compassion, not personal gain.", "Arrogance toward the truth brings Allah’s punishment."]
+      "lessons": [
+        "Power and strength without faith lead to destruction.",
+        "Prophets warn out of compassion, not personal gain.",
+        "Arrogance toward the truth brings Allah’s punishment."
+      ]
     },
 
     "salih": {
@@ -249,7 +255,11 @@
           }
         ]
       },
-      "lessons": ["Miracles are useless if the heart refuses to believe.", "Allah's signs must be treated with respect.", "Ingratitude toward Allah's blessings leads to their loss."]
+      "lessons": [
+        "Miracles are useless if the heart refuses to believe.",
+        "Allah's signs must be treated with respect.",
+        "Ingratitude toward Allah's blessings leads to their loss."
+      ]
     },
 
     "lut": {
@@ -325,7 +335,11 @@
           }
         ]
       },
-      "lessons": ["Patience in hardship is a sign of strong faith.", "Parental love is deep, but trust in Allah stands above it.", "Family trials can lead to greater closeness to Allah."]
+      "lessons": [
+        "Patience in hardship is a sign of strong faith.",
+        "Parental love is deep, but trust in Allah stands above it.",
+        "Family trials can lead to greater closeness to Allah."
+      ]
     },
 
     "shuayb": {
@@ -501,7 +515,11 @@
           }
         ]
       },
-      "lessons": ["Dua has no age limit; hope in Allah is always alive.", "Those who serve Allah’s cause often witness special signs.", "Righteous children are a great blessing and responsibility."]
+      "lessons": [
+        "Dua has no age limit; hope in Allah is always alive.",
+        "Those who serve Allah’s cause often witness special signs.",
+        "Righteous children are a great blessing and responsibility."
+      ]
     },
 
     "yahya": {
@@ -517,7 +535,11 @@
           }
         ]
       },
-      "lessons": ["Purity of heart and simplicity in life are great virtues.", "Speaking the truth may be dangerous but is the duty of prophets.", "Youth can be a time of strong devotion to Allah."]
+      "lessons": [
+        "Purity of heart and simplicity in life are great virtues.",
+        "Speaking the truth may be dangerous but is the duty of prophets.",
+        "Youth can be a time of strong devotion to Allah."
+      ]
     },
 
     "muhammad": {

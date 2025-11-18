@@ -22,6 +22,11 @@ function HomePage() {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-2">
+              <p className="text-sm sm:text-base text-muted-foreground/50 italic">
+                {t('bismillahTranslation')}
+              </p>
+            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
               {t('homepage.title')}
             </h1>
